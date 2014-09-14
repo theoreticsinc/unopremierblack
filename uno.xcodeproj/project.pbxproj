@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175CED1B19C2FDAC00C20753 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175CED1A19C2FDAC00C20753 /* MediaPlayer.framework */; };
+		175CED2119C30A4D00C20753 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175CED2019C30A4D00C20753 /* SplashViewController.m */; };
+		17880BBD19C5A39B0049E74D /* unosplash.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 17880BBC19C5A39B0049E74D /* unosplash.mp4 */; };
 		179F087A1993B6C100DAABA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179F08791993B6C100DAABA0 /* Foundation.framework */; };
 		179F087C1993B6C100DAABA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179F087B1993B6C100DAABA0 /* CoreGraphics.framework */; };
 		179F087E1993B6C100DAABA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179F087D1993B6C100DAABA0 /* UIKit.framework */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		175CED1A19C2FDAC00C20753 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		175CED1F19C30A4D00C20753 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		175CED2019C30A4D00C20753 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		17880BBC19C5A39B0049E74D /* unosplash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = unosplash.mp4; sourceTree = "<group>"; };
 		179F08761993B6C100DAABA0 /* uno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179F08791993B6C100DAABA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		179F087B1993B6C100DAABA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175CED1B19C2FDAC00C20753 /* MediaPlayer.framework in Frameworks */,
 				179F087C1993B6C100DAABA0 /* CoreGraphics.framework in Frameworks */,
 				179F087E1993B6C100DAABA0 /* UIKit.framework in Frameworks */,
 				179F087A1993B6C100DAABA0 /* Foundation.framework in Frameworks */,
@@ -84,13 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		175CED1C19C2FE6100C20753 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		179F086D1993B6C000DAABA0 = {
 			isa = PBXGroup;
 			children = (
+				17880BBC19C5A39B0049E74D /* unosplash.mp4 */,
 				179F087F1993B6C100DAABA0 /* uno */,
 				179F08A41993B6C100DAABA0 /* unoTests */,
 				179F08781993B6C100DAABA0 /* Frameworks */,
 				179F08771993B6C100DAABA0 /* Products */,
+				175CED1C19C2FE6100C20753 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +123,7 @@
 		179F08781993B6C100DAABA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				175CED1A19C2FDAC00C20753 /* MediaPlayer.framework */,
 				179F08791993B6C100DAABA0 /* Foundation.framework */,
 				179F087B1993B6C100DAABA0 /* CoreGraphics.framework */,
 				179F087D1993B6C100DAABA0 /* UIKit.framework */,
@@ -125,6 +143,8 @@
 				179F08921993B6C100DAABA0 /* FirstViewController.m */,
 				179F08941993B6C100DAABA0 /* SecondViewController.h */,
 				179F08951993B6C100DAABA0 /* SecondViewController.m */,
+				175CED1F19C30A4D00C20753 /* SplashViewController.h */,
+				175CED2019C30A4D00C20753 /* SplashViewController.m */,
 				179F08971993B6C100DAABA0 /* Images.xcassets */,
 				179F08801993B6C100DAABA0 /* Supporting Files */,
 			);
@@ -242,6 +262,7 @@
 				179F08901993B6C100DAABA0 /* Main_iPad.storyboard in Resources */,
 				179F08981993B6C100DAABA0 /* Images.xcassets in Resources */,
 				179F088D1993B6C100DAABA0 /* Main_iPhone.storyboard in Resources */,
+				17880BBD19C5A39B0049E74D /* unosplash.mp4 in Resources */,
 				179F08841993B6C100DAABA0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175CED2119C30A4D00C20753 /* SplashViewController.m in Sources */,
 				179F08961993B6C100DAABA0 /* SecondViewController.m in Sources */,
 				179F088A1993B6C100DAABA0 /* AppDelegate.m in Sources */,
 				179F08931993B6C100DAABA0 /* FirstViewController.m in Sources */,
