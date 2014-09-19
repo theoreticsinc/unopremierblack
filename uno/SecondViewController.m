@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "HouseholdTableViewController.h"
 
 @interface SecondViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +26,30 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)btnFoodSupplement:(id)sender {
+    [self performSegueWithIdentifier:@"gotoFoodSupplement" sender:self];
+}
+
+- (IBAction)btnHealthyDrinks:(id)sender {
+    [self performSegueWithIdentifier:@"gotoHealthyDrinks" sender:self];
+}
+
+- (IBAction)btnBeautyProducts:(id)sender {
+    [self performSegueWithIdentifier:@"gotoBeautyProducts" sender:self];
+}
+
+- (IBAction)btnPersonalCare:(id)sender {
+    [self performSegueWithIdentifier:@"gotoPersonalCare" sender:self];
+}
+
+- (IBAction)btnHouseholdProducts:(id)sender {
+    [self performSegueWithIdentifier:@"gotoHouseholdProducts" sender:self];
+}
+
+- (IBAction)btnBreakthrough:(id)sender {
+    [self performSegueWithIdentifier:@"gotoBreakthrough" sender:self];
+}
+
 
 @end

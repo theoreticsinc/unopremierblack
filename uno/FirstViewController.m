@@ -17,8 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *EmbedCode = @"<iframe width=\"480\" height=\"320\" src=\"http://www.youtube.com/embed/WEJigpOFlGE\" frameborder=\"0\" allowfullscreen></iframe>";
-    [[self Webview] loadHTMLString:EmbedCode baseURL:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,5 +24,25 @@
     [super didReceiveMemoryWarning];
 }
 
+
+- (IBAction)btnAbtUs:(id)sender {
+    [self performSegueWithIdentifier:@"gotoAbtUs" sender:self];
+}
+
+- (IBAction)btnBoardDirectors:(id)sender {
+    [self performSegueWithIdentifier:@"gotoBoardDirectors" sender:self];
+}
+
+- (IBAction)btnMissionVision:(id)sender {
+    [self performSegueWithIdentifier:@"gotoMissionVision" sender:self];
+}
+
+- (IBAction)btnCodeConduct:(id)sender {
+    [self performSegueWithIdentifier:@"gotoCodeConduct" sender:self];
+}
+
+- (IBAction)btnCertificates:(id)sender {
+    [self performSegueWithIdentifier:@"gotoCertificates" sender:self];
+}
 
 @end

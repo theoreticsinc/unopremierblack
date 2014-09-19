@@ -10,6 +10,10 @@
 
 @interface FirstViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIWebView *Webview;
+- (IBAction)btnAbtUs:(id)sender;
+- (IBAction)btnBoardDirectors:(id)sender;
+- (IBAction)btnMissionVision:(id)sender;
+- (IBAction)btnCodeConduct:(id)sender;
+- (IBAction)btnCertificates:(id)sender;
 
 @end

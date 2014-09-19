@@ -17,7 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSString *EmbedCode = @"<iframe width=\"480\" height=\"320\" src=\"http://www.youtube.com/embed/WEJigpOFlGE\" frameborder=\"0\" allowfullscreen></iframe>";
+    [[self Webview] loadHTMLString:EmbedCode baseURL:nil];
+
 }
 
 - (void)didReceiveMemoryWarning

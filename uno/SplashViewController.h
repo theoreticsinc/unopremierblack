@@ -10,6 +10,4 @@
 
 @interface SplashViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *homebtn;
-
 @end
