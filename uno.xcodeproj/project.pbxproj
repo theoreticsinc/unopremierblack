@@ -11,6 +11,12 @@
 		171496B319CAF26800AC4C3C /* HouseholdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171496B219CAF26800AC4C3C /* HouseholdTableViewController.m */; };
 		171496B619CB092900AC4C3C /* HealthyDrinksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171496B519CB092900AC4C3C /* HealthyDrinksTableViewController.m */; };
 		171496B919CB0ABC00AC4C3C /* BeautyProductsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171496B819CB0ABC00AC4C3C /* BeautyProductsTableViewController.m */; };
+		1721F4DD19CCD55D0087AA29 /* playbutton_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1721F4DC19CCD55D0087AA29 /* playbutton_small.png */; };
+		1721F4DF19CCDBE60087AA29 /* downloadicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1721F4DE19CCDBE60087AA29 /* downloadicon.png */; };
+		1721F4E219CCE4430087AA29 /* VideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721F4E119CCE4430087AA29 /* VideosViewController.m */; };
+		1721F4E519CCE9F50087AA29 /* TenWays1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721F4E419CCE9F50087AA29 /* TenWays1ViewController.m */; };
+		1721F4E819CD058D0087AA29 /* swipeleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 1721F4E619CD058C0087AA29 /* swipeleft.png */; };
+		1721F4E919CD058D0087AA29 /* swiperight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1721F4E719CD058D0087AA29 /* swiperight.png */; };
 		172BD53319CC4EA000E18BA9 /* prod_coffee_strong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 172BD52E19CC4EA000E18BA9 /* prod_coffee_strong.jpg */; };
 		172BD53519CC4EA000E18BA9 /* prod_glutasoap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 172BD53019CC4EA000E18BA9 /* prod_glutasoap.jpg */; };
 		172BD53619CC4EA000E18BA9 /* prod_grapeseed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 172BD53119CC4EA000E18BA9 /* prod_grapeseed.jpg */; };
@@ -214,6 +220,14 @@
 		171496B519CB092900AC4C3C /* HealthyDrinksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthyDrinksTableViewController.m; sourceTree = "<group>"; };
 		171496B719CB0ABC00AC4C3C /* BeautyProductsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyProductsTableViewController.h; sourceTree = "<group>"; };
 		171496B819CB0ABC00AC4C3C /* BeautyProductsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyProductsTableViewController.m; sourceTree = "<group>"; };
+		1721F4DC19CCD55D0087AA29 /* playbutton_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton_small.png; sourceTree = "<group>"; };
+		1721F4DE19CCDBE60087AA29 /* downloadicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downloadicon.png; sourceTree = "<group>"; };
+		1721F4E019CCE4430087AA29 /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosViewController.h; sourceTree = "<group>"; };
+		1721F4E119CCE4430087AA29 /* VideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosViewController.m; sourceTree = "<group>"; };
+		1721F4E319CCE9F50087AA29 /* TenWays1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenWays1ViewController.h; sourceTree = "<group>"; };
+		1721F4E419CCE9F50087AA29 /* TenWays1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenWays1ViewController.m; sourceTree = "<group>"; };
+		1721F4E619CD058C0087AA29 /* swipeleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipeleft.png; sourceTree = "<group>"; };
+		1721F4E719CD058D0087AA29 /* swiperight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swiperight.png; sourceTree = "<group>"; };
 		172BD52E19CC4EA000E18BA9 /* prod_coffee_strong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prod_coffee_strong.jpg; sourceTree = "<group>"; };
 		172BD53019CC4EA000E18BA9 /* prod_glutasoap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prod_glutasoap.jpg; sourceTree = "<group>"; };
 		172BD53119CC4EA000E18BA9 /* prod_grapeseed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prod_grapeseed.jpg; sourceTree = "<group>"; };
@@ -651,6 +665,10 @@
 				172E4C3119C687EC00551E8B /* tab_home.png */,
 				172E4C3219C687EC00551E8B /* tab_prod_packages.png */,
 				172E4C3319C687EC00551E8B /* tab_products.png */,
+				1721F4E619CD058C0087AA29 /* swipeleft.png */,
+				1721F4E719CD058D0087AA29 /* swiperight.png */,
+				1721F4DE19CCDBE60087AA29 /* downloadicon.png */,
+				1721F4DC19CCD55D0087AA29 /* playbutton_small.png */,
 				172E4C2C19C682D500551E8B /* back_button.png */,
 				172E4C2819C682CE00551E8B /* bgland.jpg */,
 				172E4C2919C682CE00551E8B /* bgport.jpg */,
@@ -723,6 +741,10 @@
 				172E4C3E19C691B400551E8B /* FourthViewController.m */,
 				172E4C4019C691D100551E8B /* FifthViewController.m */,
 				172E4C3D19C6918300551E8B /* FifthViewController.h */,
+				1721F4E319CCE9F50087AA29 /* TenWays1ViewController.h */,
+				1721F4E419CCE9F50087AA29 /* TenWays1ViewController.m */,
+				1721F4E019CCE4430087AA29 /* VideosViewController.h */,
+				1721F4E119CCE4430087AA29 /* VideosViewController.m */,
 				175CED1F19C30A4D00C20753 /* SplashViewController.h */,
 				175CED2019C30A4D00C20753 /* SplashViewController.m */,
 				17FD88A319CC1DE600F0706C /* CompanyViewController.h */,
@@ -906,6 +928,7 @@
 				172E4C6219C69AF100551E8B /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
 				172BD56E19CC4EC500E18BA9 /* prod_scareaway.jpg in Resources */,
 				172E4C2619C67F9F00551E8B /* ic_tenways.png in Resources */,
+				1721F4DF19CCDBE60087AA29 /* downloadicon.png in Resources */,
 				172BD5B419CC555900E18BA9 /* ultimaC.png in Resources */,
 				172E4C6019C69AF100551E8B /* Icon-76@2x.png in Resources */,
 				172BD55C19CC4EC500E18BA9 /* prod_cappuccino.jpg in Resources */,
@@ -948,6 +971,7 @@
 				172BD58019CC52ED00E18BA9 /* 8in1coffeeLite.png in Resources */,
 				172E4C2A19C682CE00551E8B /* bgland.jpg in Resources */,
 				17D1731019CA8FDA00A027DC /* certbtn5.png in Resources */,
+				1721F4E819CD058D0087AA29 /* swipeleft.png in Resources */,
 				172E4C6919C69AF100551E8B /* Icon@2x.png in Resources */,
 				172BD57019CC4EC500E18BA9 /* prod_thanakha.jpg in Resources */,
 				172E4C1A19C67F9F00551E8B /* ic_directunilevel.png in Resources */,
@@ -963,6 +987,7 @@
 				172E4C1019C67F9F00551E8B /* ic_aboutus.png in Resources */,
 				172BD5A219CC546A00E18BA9 /* scalarPendant.png in Resources */,
 				172E4C2419C67F9F00551E8B /* ic_supermatching.png in Resources */,
+				1721F4DD19CCD55D0087AA29 /* playbutton_small.png in Resources */,
 				172E4C5B19C69AF100551E8B /* ic_appicon.png in Resources */,
 				17D1731319CA8FDA00A027DC /* certbtn8.png in Resources */,
 				172E4C2B19C682CE00551E8B /* bgport.jpg in Resources */,
@@ -994,6 +1019,7 @@
 				172BD5B219CC555900E18BA9 /* kryptorganic.png in Resources */,
 				172E4BE319C67A2500551E8B /* icons_breakthru.png in Resources */,
 				172E4C1D19C67F9F00551E8B /* ic_globalprofitsharing.png in Resources */,
+				1721F4E919CD058D0087AA29 /* swiperight.png in Resources */,
 				172E4C2119C67F9F00551E8B /* ic_mission.png in Resources */,
 				172E4C5A19C69AF100551E8B /* ic_appicon-web@2x.png in Resources */,
 				172BD59119CC536200E18BA9 /* bodyworks.png in Resources */,
@@ -1061,6 +1087,8 @@
 				171496B619CB092900AC4C3C /* HealthyDrinksTableViewController.m in Sources */,
 				171496B919CB0ABC00AC4C3C /* BeautyProductsTableViewController.m in Sources */,
 				171496B019CAE48400AC4C3C /* SimpleTableViewController.m in Sources */,
+				1721F4E519CCE9F50087AA29 /* TenWays1ViewController.m in Sources */,
+				1721F4E219CCE4430087AA29 /* VideosViewController.m in Sources */,
 				179F08931993B6C100DAABA0 /* FirstViewController.m in Sources */,
 				172E4C3F19C691B400551E8B /* FourthViewController.m in Sources */,
 				179F08861993B6C100DAABA0 /* main.m in Sources */,
@@ -1157,7 +1185,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "cc088d44-919b-40c0-9486-7b2518f07b92";
+				PROVISIONING_PROFILE = "594e0943-9783-4aac-abdd-a522ddf498ee";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1191,7 +1219,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "cc088d44-919b-40c0-9486-7b2518f07b92";
+				PROVISIONING_PROFILE = "594e0943-9783-4aac-abdd-a522ddf498ee";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1207,7 +1235,7 @@
 				GCC_PREFIX_HEADER = "uno/uno-Prefix.pch";
 				INFOPLIST_FILE = "uno/uno-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cc088d44-919b-40c0-9486-7b2518f07b92";
+				PROVISIONING_PROFILE = "594e0943-9783-4aac-abdd-a522ddf498ee";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1221,7 +1249,7 @@
 				GCC_PREFIX_HEADER = "uno/uno-Prefix.pch";
 				INFOPLIST_FILE = "uno/uno-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cc088d44-919b-40c0-9486-7b2518f07b92";
+				PROVISIONING_PROFILE = "594e0943-9783-4aac-abdd-a522ddf498ee";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

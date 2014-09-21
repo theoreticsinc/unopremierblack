@@ -51,5 +51,10 @@
     [self performSegueWithIdentifier:@"gotoBreakthrough" sender:self];
 }
 
+- (IBAction)btnWatchAVP:(id)sender {
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"https://www.youtube.com/watch?v=WEJigpOFlGE" ];
+    
+    [[UIApplication sharedApplication] openURL:url];
+}
 
 @end

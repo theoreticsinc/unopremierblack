@@ -9,6 +9,7 @@
 #import "FourthViewController.h"
 
 @interface FourthViewController ()
+- (IBAction)btnDownload:(id)sender;
 
 @end
 
@@ -26,4 +27,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnDownload:(id)sender {
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://uno-corp.com/home/homepage/registered/country-product-packages" ];
+    
+    [[UIApplication sharedApplication] openURL:url];
+}
 @end

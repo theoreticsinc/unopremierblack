@@ -479,19 +479,39 @@ the world..</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aVi-hi-GWe">
-                                        <rect key="frame" x="159" y="112" width="85" height="85"/>
+                                        <rect key="frame" x="166" y="112" width="85" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn3.png" translatesAutoresizingMaskIntoConstraints="NO" id="tGM-Zk-k45">
-                                        <rect key="frame" x="66" y="217" width="85" height="85"/>
+                                        <rect key="frame" x="66" y="205" width="85" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn4.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mr7-lQ-wEK">
-                                        <rect key="frame" x="159" y="217" width="90" height="85"/>
+                                        <rect key="frame" x="163" y="205" width="90" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="YWS-DE-S4k">
                                         <rect key="frame" x="20" y="54" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn5.png" translatesAutoresizingMaskIntoConstraints="NO" id="sJC-3R-nxg">
+                                        <rect key="frame" x="63" y="298" width="90" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn6.png" translatesAutoresizingMaskIntoConstraints="NO" id="dfk-uH-T17">
+                                        <rect key="frame" x="159" y="298" width="98" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn7.png" translatesAutoresizingMaskIntoConstraints="NO" id="dA9-yD-EgZ">
+                                        <rect key="frame" x="53" y="391" width="98" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn8.png" translatesAutoresizingMaskIntoConstraints="NO" id="nBy-8e-GzO">
+                                        <rect key="frame" x="159" y="391" width="98" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn9.png" translatesAutoresizingMaskIntoConstraints="NO" id="xlG-tR-8c5">
+                                        <rect key="frame" x="55" y="470" width="98" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Certificates" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMO-xi-BBF">
@@ -531,12 +551,45 @@ the world..</string>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4AL-Mi-LvW" kind="relationship" relationship="viewControllers" id="eA6-oC-vAO"/>
+                        <segue destination="uhR-Oq-GaW" kind="relationship" relationship="viewControllers" id="4pi-3d-D3A"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nch-MS-OWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6345" y="-795"/>
+        </scene>
+        <!--Videos View Controller - Item-->
+        <scene sceneID="nl2-Pf-bOz">
+            <objects>
+                <viewController id="uhR-Oq-GaW" customClass="VideosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tBh-ab-H8F"/>
+                        <viewControllerLayoutGuide type="bottom" id="qlL-ca-BkQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tJP-01-mw9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-EG-D25">
+                                <rect key="frame" x="88" y="161" width="145" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" Master AVP" image="ic_aboutus.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="masterBtn:" destination="uhR-Oq-GaW" eventType="touchUpInside" id="A85-2r-l4g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tab_videos.png" id="ZTn-wJ-nL9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDM-5t-WhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5942" y="-795"/>
         </scene>
         <!--Second View Controller - Products-->
         <scene sceneID="ot8-2e-RuS">
@@ -682,6 +735,18 @@ the world..</string>
                                     <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="5eD-Sh-9w9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSx-nr-DG6">
+                                <rect key="frame" x="67" y="442" width="186" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" watch product avp" image="playbutton_small.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnWatchAVP:" destination="QUy-BD-bpt" eventType="touchUpInside" id="Hcl-rP-ybu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -702,6 +767,51 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-4819" y="-950"/>
         </scene>
+        <!--Ten Ways1 View Controller-->
+        <scene sceneID="Tbb-Pb-QUX">
+            <objects>
+                <viewController id="jUg-T9-Vb5" customClass="TenWays1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q7Q-o1-cH3"/>
+                        <viewControllerLayoutGuide type="bottom" id="rEN-Au-P69"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ogc-He-9Os">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zK-aN-XjS">
+                                <rect key="frame" x="83" y="152" width="40" height="28"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9ul-CT-1kN" appends="YES" id="atJ-AY-eaB"/>
+                            <outletCollection property="gestureRecognizers" destination="yaY-KS-Pkl" appends="YES" id="CLd-a6-JT9"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="qdd-27-Xs3"/>
+                    <connections>
+                        <outlet property="swipe10LeftRecognizer" destination="9ul-CT-1kN" id="QP2-yi-nq8"/>
+                        <outlet property="swipe10RightRecognizer" destination="yaY-KS-Pkl" id="QrL-Mx-2Ij"/>
+                        <outlet property="tapImage" destination="0zK-aN-XjS" id="if2-hz-0pi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPZ-JB-ZDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="9ul-CT-1kN" userLabel="LeftSwipe Gesture Recognizer">
+                    <connections>
+                        <action selector="showGestureForSwipeLeftRecognizer:" destination="jUg-T9-Vb5" id="0pc-Vf-gCY"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="yaY-KS-Pkl" userLabel="RightSwipe Gesture Recognizer">
+                    <connections>
+                        <action selector="showGestureForSwipeRightRecognizer:" destination="jUg-T9-Vb5" id="sPA-wB-MTg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-3768" y="-3174"/>
+        </scene>
         <!--Third View Controller - Ten Ways-->
         <scene sceneID="qj7-nG-dyA">
             <objects>
@@ -714,17 +824,45 @@ the world..</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ten Ways To Earn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zr0-Q8-69r">
-                                <rect key="frame" x="78" y="34" width="136" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0de-M6-bzT">
+                                <rect key="frame" x="54" y="103" width="212" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="F8q-TR-03o">
-                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="10 Ways Philippines" image="ic_aboutus.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="intl:" destination="erF-xz-glj" eventType="touchUpInside" id="aER-65-XzI"/>
+                                    <action selector="local:" destination="erF-xz-glj" eventType="touchUpInside" id="Hqd-S7-y4D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DLd-gN-LsO">
+                                <rect key="frame" x="59" y="198" width="212" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="10 Ways International" image="ic_aboutus.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="intl:" destination="erF-xz-glj" eventType="touchUpInside" id="j2L-wy-KAY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qz-9S-LBI">
+                                <rect key="frame" x="39" y="302" width="243" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" Download Marketing Plan" image="downloadicon.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="marketingPlan:" destination="erF-xz-glj" eventType="touchUpInside" id="oy9-Vu-aEF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -732,6 +870,9 @@ the world..</string>
                     <navigationItem key="navigationItem" id="ujB-oV-5sM"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="9WX-me-V7m" kind="modal" identifier="gotoIntl" id="XzS-vH-UCJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkL-mJ-YL1" sceneMemberID="firstResponder"/>
             </objects>
@@ -866,7 +1007,7 @@ the world..</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVG-fb-3qd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5861" y="-795"/>
+            <point key="canvasLocation" x="-5933" y="125"/>
         </scene>
         <!--Personal Care Table View Controller-->
         <scene sceneID="uaQ-pm-MJg">
@@ -1055,17 +1196,18 @@ the world..</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Packages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-X9-tU2">
-                                <rect key="frame" x="78" y="34" width="141" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9IS-pe-4sj">
+                                <rect key="frame" x="30" y="179" width="261" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="RXg-KW-8Qj">
-                                <rect key="frame" x="20" y="20" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title=" Country   Product Packages" image="prod_packages.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDownload:" destination="bVJ-R0-k7V" eventType="touchUpInside" id="wjD-Lx-wSp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1358,6 +1500,24 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-3085" y="-2042"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SIc-Hq-gWb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9WX-me-V7m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cqt-TS-SuP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jUg-T9-Vb5" kind="relationship" relationship="rootViewController" id="GPi-zp-URL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fue-Nb-Dvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4294" y="-3174"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bgport.jpg" width="600" height="862"/>
@@ -1365,9 +1525,15 @@ the world..</string>
         <image name="certbtn2.png" width="85" height="85"/>
         <image name="certbtn3.png" width="85" height="85"/>
         <image name="certbtn4.png" width="85" height="85"/>
+        <image name="certbtn5.png" width="85" height="85"/>
+        <image name="certbtn6.png" width="98" height="71"/>
+        <image name="certbtn7.png" width="96" height="69"/>
+        <image name="certbtn8.png" width="99" height="70"/>
+        <image name="certbtn9.png" width="98" height="69"/>
         <image name="director1.jpg" width="150" height="150"/>
         <image name="director2.jpg" width="150" height="150"/>
         <image name="director3.jpg" width="150" height="150"/>
+        <image name="downloadicon.png" width="35" height="35"/>
         <image name="ic_aboutus.png" width="50" height="50"/>
         <image name="ic_beautyproducts.png" width="50" height="50"/>
         <image name="ic_breakthru.png" width="50" height="50"/>
@@ -1380,6 +1546,8 @@ the world..</string>
         <image name="ic_mission.png" width="50" height="50"/>
         <image name="ic_peoplecare.png" width="50" height="50"/>
         <image name="ic_tenways.png" width="50" height="50"/>
+        <image name="playbutton_small.png" width="35" height="35"/>
+        <image name="prod_packages.png" width="113" height="112"/>
         <image name="tab_10ways.png" width="32" height="32"/>
         <image name="tab_company.png" width="32" height="32"/>
         <image name="tab_prod_packages.png" width="32" height="32"/>

@@ -8,8 +8,9 @@
 
 #import "FirstViewController.h"
 
-@interface FirstViewController ()
-
+@interface FirstViewController () {
+    
+}
 @end
 
 @implementation FirstViewController
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+    [self setUpViewForOrientation:interfaceOrientation];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +46,16 @@
 
 - (IBAction)btnCertificates:(id)sender {
     [self performSegueWithIdentifier:@"gotoCertificates" sender:self];
+}
+
+-(void)setUpViewForOrientation:(UIInterfaceOrientation)orientation
+{
+    
+}
+
+-(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [self setUpViewForOrientation:toInterfaceOrientation];
 }
 
 @end

@@ -9,6 +9,9 @@
 #import "ThirdViewController.h"
 
 @interface ThirdViewController ()
+- (IBAction)intl:(id)sender;
+- (IBAction)local:(id)sender;
+- (IBAction)marketingPlan:(id)sender;
 
 @end
 
@@ -26,4 +29,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)intl:(id)sender {
+    [self performSegueWithIdentifier:@"gotoIntl" sender:self];
+}
+
+- (IBAction)local:(id)sender {
+    [self performSegueWithIdentifier:@"gotoLocal" sender:self];
+}
+
+- (IBAction)marketingPlan:(id)sender {
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://uno-corp.com/home/homepage/registered/marketing-plan-main-page" ];
+    
+    [[UIApplication sharedApplication] openURL:url];
+}
 @end
