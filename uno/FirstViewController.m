@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"First View Loaded");
     [super viewDidLoad];
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     [self setUpViewForOrientation:interfaceOrientation];

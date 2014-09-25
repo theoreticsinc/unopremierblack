@@ -10,29 +10,29 @@
 	<string>uno</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>14AD34D2-378D-4C36-80C1-F119E2DE224E</key>
+		<key>E22582A8217E1CEE2066385EBE2782AF77D6D3D9</key>
 		<string>https://github.com/theoreticsinc/uno1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>uno.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>14AD34D2-378D-4C36-80C1-F119E2DE224E</key>
+		<key>E22582A8217E1CEE2066385EBE2782AF77D6D3D9</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/theoreticsinc/uno1.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>14AD34D2-378D-4C36-80C1-F119E2DE224E</string>
+	<string>E22582A8217E1CEE2066385EBE2782AF77D6D3D9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>14AD34D2-378D-4C36-80C1-F119E2DE224E</string>
+			<string>E22582A8217E1CEE2066385EBE2782AF77D6D3D9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>uno</string>
 		</dict>
