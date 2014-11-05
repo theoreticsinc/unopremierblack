@@ -69,8 +69,8 @@
 		172BD58519CC52ED00E18BA9 /* cornCoffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD57D19CC52ED00E18BA9 /* cornCoffee.png */; };
 		172BD58619CC52ED00E18BA9 /* primejuice.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD57E19CC52ED00E18BA9 /* primejuice.png */; };
 		172BD59119CC536200E18BA9 /* bodyworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD58819CC536200E18BA9 /* bodyworks.png */; };
-		172BD59219CC536200E18BA9 /* glutathioneLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD58919CC536200E18BA9 /* glutathioneLight.png */; };
-		172BD59319CC536200E18BA9 /* glutathionesoap.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD58A19CC536200E18BA9 /* glutathionesoap.png */; };
+		172BD59219CC536200E18BA9 /* gluLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD58919CC536200E18BA9 /* gluLight.png */; };
+		172BD59319CC536200E18BA9 /* glusoap.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD58A19CC536200E18BA9 /* glusoap.png */; };
 		172BD59419CC536200E18BA9 /* hairtreats.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD58B19CC536200E18BA9 /* hairtreats.png */; };
 		172BD59519CC536200E18BA9 /* kojic.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD58C19CC536200E18BA9 /* kojic.png */; };
 		172BD59619CC536200E18BA9 /* magic_cream.png in Resources */ = {isa = PBXBuildFile; fileRef = 172BD58D19CC536200E18BA9 /* magic_cream.png */; };
@@ -170,7 +170,7 @@
 		172E4C6719C69AF100551E8B /* Icon-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 172E4C5619C69AF100551E8B /* Icon-Spotlight-iOS7@2x.png */; };
 		172E4C6819C69AF100551E8B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 172E4C5719C69AF100551E8B /* Icon.png */; };
 		172E4C6919C69AF100551E8B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 172E4C5819C69AF100551E8B /* Icon@2x.png */; };
-		172E4C6B19C69BF600551E8B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 172E4C6A19C69BF600551E8B /* Default@2x.png */; };
+		172F30E61A08573F001BD713 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F30E51A08573F001BD713 /* DetailsViewController.m */; };
 		175CED1B19C2FDAC00C20753 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175CED1A19C2FDAC00C20753 /* MediaPlayer.framework */; };
 		175CED2119C30A4D00C20753 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175CED2019C30A4D00C20753 /* SplashViewController.m */; };
 		17880BBD19C5A39B0049E74D /* unosplash.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 17880BBC19C5A39B0049E74D /* unosplash.mp4 */; };
@@ -348,8 +348,8 @@
 		172BD57D19CC52ED00E18BA9 /* cornCoffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cornCoffee.png; sourceTree = "<group>"; };
 		172BD57E19CC52ED00E18BA9 /* primejuice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = primejuice.png; sourceTree = "<group>"; };
 		172BD58819CC536200E18BA9 /* bodyworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bodyworks.png; sourceTree = "<group>"; };
-		172BD58919CC536200E18BA9 /* glutathioneLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glutathioneLight.png; sourceTree = "<group>"; };
-		172BD58A19CC536200E18BA9 /* glutathionesoap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glutathionesoap.png; sourceTree = "<group>"; };
+		172BD58919CC536200E18BA9 /* gluLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gluLight.png; sourceTree = "<group>"; };
+		172BD58A19CC536200E18BA9 /* glusoap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glusoap.png; sourceTree = "<group>"; };
 		172BD58B19CC536200E18BA9 /* hairtreats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hairtreats.png; sourceTree = "<group>"; };
 		172BD58C19CC536200E18BA9 /* kojic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kojic.png; sourceTree = "<group>"; };
 		172BD58D19CC536200E18BA9 /* magic_cream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magic_cream.png; sourceTree = "<group>"; };
@@ -453,6 +453,8 @@
 		172E4C5719C69AF100551E8B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		172E4C5819C69AF100551E8B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		172E4C6A19C69BF600551E8B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		172F30E41A08573F001BD713 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		172F30E51A08573F001BD713 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		175CED1A19C2FDAC00C20753 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		175CED1F19C30A4D00C20753 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		175CED2019C30A4D00C20753 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
@@ -648,8 +650,8 @@
 			isa = PBXGroup;
 			children = (
 				172BD58819CC536200E18BA9 /* bodyworks.png */,
-				172BD58919CC536200E18BA9 /* glutathioneLight.png */,
-				172BD58A19CC536200E18BA9 /* glutathionesoap.png */,
+				172BD58919CC536200E18BA9 /* gluLight.png */,
+				172BD58A19CC536200E18BA9 /* glusoap.png */,
 				172BD58B19CC536200E18BA9 /* hairtreats.png */,
 				172BD58C19CC536200E18BA9 /* kojic.png */,
 				172BD58D19CC536200E18BA9 /* magic_cream.png */,
@@ -1033,6 +1035,8 @@
 				17FD889E19CB95F400F0706C /* FoodSupplementTableViewController.m */,
 				17FD88A019CB963600F0706C /* BreakThroughTableViewController.h */,
 				17FD88A119CB963600F0706C /* BreakThroughTableViewController.m */,
+				172F30E41A08573F001BD713 /* DetailsViewController.h */,
+				172F30E51A08573F001BD713 /* DetailsViewController.m */,
 			);
 			name = ProductsClasses;
 			sourceTree = "<group>";
@@ -1081,11 +1085,11 @@
 		179F086E1993B6C000DAABA0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Unlimited Network of Opportunities";
 				TargetAttributes = {
 					179F08751993B6C000DAABA0 = {
-						DevelopmentTeam = 8242Y9T25Q;
+						DevelopmentTeam = 2J292TB7A6;
 					};
 					179F089C1993B6C100DAABA0 = {
 						TestTargetID = 179F08751993B6C000DAABA0;
@@ -1159,7 +1163,7 @@
 				172E4C6119C69AF100551E8B /* Icon-120.png in Resources */,
 				172E4C1F19C67F9F00551E8B /* ic_householdproducts.png in Resources */,
 				172BD56B19CC4EC500E18BA9 /* prod_packages.png in Resources */,
-				172BD59219CC536200E18BA9 /* glutathioneLight.png in Resources */,
+				172BD59219CC536200E18BA9 /* gluLight.png in Resources */,
 				172E4BF119C67A2500551E8B /* icons_matchingbonus.png in Resources */,
 				172BD58619CC52ED00E18BA9 /* primejuice.png in Resources */,
 				172BD58119CC52ED00E18BA9 /* acaiberry.png in Resources */,
@@ -1200,7 +1204,6 @@
 				17CEC84919D1861900C84CCB /* p023.jpg in Resources */,
 				17D1730C19CA8FDA00A027DC /* certbtn1.png in Resources */,
 				172E4C2019C67F9F00551E8B /* ic_matchingbonus.png in Resources */,
-				172E4C6B19C69BF600551E8B /* Default@2x.png in Resources */,
 				172BD56919CC4EC500E18BA9 /* prod_nyscent.jpg in Resources */,
 				172E4C1419C67F9F00551E8B /* ic_conduct.png in Resources */,
 				172E4BF319C67A2500551E8B /* icons_multilevelmarketing.png in Resources */,
@@ -1310,7 +1313,7 @@
 				17E7AF1219C7CAD6009E5374 /* rotation.png in Resources */,
 				172BD53519CC4EA000E18BA9 /* prod_glutasoap.jpg in Resources */,
 				172BD59719CC536200E18BA9 /* naturaWhite.png in Resources */,
-				172BD59319CC536200E18BA9 /* glutathionesoap.png in Resources */,
+				172BD59319CC536200E18BA9 /* glusoap.png in Resources */,
 				172BD56619CC4EC500E18BA9 /* prod_magiccream.jpg in Resources */,
 				172E4C1C19C67F9F00551E8B /* ic_generationbonus.png in Resources */,
 				17CEC80E19D185B800C84CCB /* x019.jpg in Resources */,
@@ -1375,6 +1378,7 @@
 				172973C519D20B18004CA9CF /* DataViewController.m in Sources */,
 				17CEC7DB19D1811900C84CCB /* LocalDataViewController.m in Sources */,
 				171496B919CB0ABC00AC4C3C /* BeautyProductsTableViewController.m in Sources */,
+				172F30E61A08573F001BD713 /* DetailsViewController.m in Sources */,
 				1721F4E519CCE9F50087AA29 /* TenWays1ViewController.m in Sources */,
 				1721F4E219CCE4430087AA29 /* VideosViewController.m in Sources */,
 				17CEC7DE19D1812400C84CCB /* LocalRootViewController.m in Sources */,
@@ -1456,8 +1460,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Rizalina Dizon (8242Y9T25Q)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Rizalina Dizon (8242Y9T25Q)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Herbert Chua (UNS2Z2ZQF9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Herbert Chua (UNS2Z2ZQF9)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1475,7 +1479,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "fea372ea-d29e-4fad-ae38-2ce6a40ad05f";
+				PROVISIONING_PROFILE = "3a4330e2-4ba6-477d-937b-1227c6410901";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1497,8 +1501,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Rizalina Dizon (8242Y9T25Q)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Rizalina Dizon (8242Y9T25Q)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Herbert Chua (UNS2Z2ZQF9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Herbert Chua (UNS2Z2ZQF9)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1509,7 +1513,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "fea372ea-d29e-4fad-ae38-2ce6a40ad05f";
+				PROVISIONING_PROFILE = "3a4330e2-4ba6-477d-937b-1227c6410901";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1521,13 +1525,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Rizalina Dizon (8242Y9T25Q)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Rizalina Dizon (8242Y9T25Q)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Herbert Chua (UNS2Z2ZQF9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Herbert Chua (UNS2Z2ZQF9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "uno/uno-Prefix.pch";
 				INFOPLIST_FILE = "uno/uno-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fea372ea-d29e-4fad-ae38-2ce6a40ad05f";
+				PROVISIONING_PROFILE = "3a4330e2-4ba6-477d-937b-1227c6410901";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1537,13 +1541,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Rizalina Dizon (8242Y9T25Q)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Rizalina Dizon (8242Y9T25Q)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Herbert Chua (UNS2Z2ZQF9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Herbert Chua (UNS2Z2ZQF9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "uno/uno-Prefix.pch";
 				INFOPLIST_FILE = "uno/uno-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fea372ea-d29e-4fad-ae38-2ce6a40ad05f";
+				PROVISIONING_PROFILE = "3a4330e2-4ba6-477d-937b-1227c6410901";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

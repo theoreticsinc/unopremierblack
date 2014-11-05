@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     products = [NSArray arrayWithObjects:@"Glutathione", @"Kojic Soap",@"Body Works",@"Glutathione Soap",@"Health Hair Treats",@"Magic Cream", @"Natura White", @"Nutri Hair", @"Thanakha", nil];
-    productsImages = [NSArray arrayWithObjects:@"gluthathioneLight.png", @"kojic.png",@"bodyworks.png",@"gluthathionesoap.png",@"hairtreats.png",@"magic_cream.png", @"naturaWhite.png", @"nutrihair.png", @"thanakha.png", nil];
+    productsImages = [NSArray arrayWithObjects:@"gluLight.png", @"kojic.png",@"bodyworks.png",@"glusoap.png",@"hairtreats.png",@"magic_cream.png", @"naturaWhite.png", @"nutrihair.png", @"thanakha.png", nil];
     self.navigationItem.title = @"UNO Beauty Products";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStyleDone target:self action:@selector(back)];
@@ -61,6 +61,27 @@
     cell.textLabel.text = [products objectAtIndex:indexPath.row];
     cell.imageView.image = [UIImage imageNamed:[productsImages objectAtIndex:indexPath.row]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    /*
+     To illustrate the effect of highlighting the cell, don't set the selection style to None in the storyboard, instead implement this method to immediately deselect the cell.
+     */
+    NSLog(@"SELECTED: ");
+    [self performSegueWithIdentifier:@"pushProducts" sender:self];
+    //[self performSegueWithIdentifier:@"showRecipeDetail" parameters:@{@"customParam1":@"testing1", @"customValue2":@"testing2"}];
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"pushProducts"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailsViewController *destViewController = segue.destinationViewController;
+        NSLog(@"PRODUCT: %@", [products objectAtIndex:indexPath.row]);
+        destViewController.recipeName = [products objectAtIndex:indexPath.row];
+        destViewController.imageFile = [productsImages objectAtIndex:indexPath.row];;
+    }
 }
 
 /*

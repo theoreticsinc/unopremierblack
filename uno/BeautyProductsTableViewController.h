@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailsViewController.h"
 
 @interface BeautyProductsTableViewController : UITableViewController
+
+@property (nonatomic, strong) NSString *myData;
 
 @end

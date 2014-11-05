@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SDO-4B-znz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SDO-4B-znz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -27,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-5893" y="-1611"/>
         </scene>
-        <!--First View Controller - Our Company-->
+        <!--Our Company-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
                 <viewController title="Our Company" id="CZ4-MO-1fc" customClass="FirstViewController" sceneMemberID="viewController">
@@ -41,7 +42,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ntI-R6-jnf">
                                 <rect key="frame" x="51" y="74" width="102" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-20" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -62,7 +62,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4e-5V-wSC">
                                 <rect key="frame" x="161" y="74" width="102" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-50" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -83,7 +82,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XR-J7-ypf">
                                 <rect key="frame" x="58" y="196" width="102" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -104,7 +102,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ok-eG-E4t">
                                 <rect key="frame" x="168" y="196" width="102" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -125,7 +122,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DrL-rG-EOw">
                                 <rect key="frame" x="58" y="310" width="102" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-30" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="26" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -162,7 +158,7 @@
             </objects>
             <point key="canvasLocation" x="-4819" y="-1622"/>
         </scene>
-        <!--Company View Controller - AboutUs-->
+        <!--AboutUs-->
         <scene sceneID="PvD-Pk-RTb">
             <objects>
                 <viewController title="AboutUs" id="xGa-k0-187" customClass="CompanyViewController" sceneMemberID="viewController">
@@ -176,18 +172,15 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="GC8-Yt-9fb">
                                 <rect key="frame" x="13" y="61" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About UNO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bx-F1-QDT">
                                 <rect key="frame" x="71" y="75" width="93" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-Es-qg7">
                                 <rect key="frame" x="13" y="125" width="292" height="351"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Unlimited Network of Opportunities International Corporation 
 (or UNO) is a convergence of the finest network marketers in 
@@ -222,7 +215,7 @@ is to SERVE THE NEW CONSUMER...</string>
             </objects>
             <point key="canvasLocation" x="-3478" y="-2042"/>
         </scene>
-        <!--Company View Controller - BoardDirector-->
+        <!--BoardDirector-->
         <scene sceneID="J99-FU-2k7">
             <objects>
                 <viewController title="BoardDirector" id="g2d-vc-9YK" customClass="CompanyViewController" sceneMemberID="viewController">
@@ -236,23 +229,18 @@ is to SERVE THE NEW CONSUMER...</string>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqv-kj-iEv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OrZ-AS-J0r">
                                         <rect key="frame" x="85" y="70" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dy8-xF-jMG">
                                         <rect key="frame" x="85" y="228" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tPy-uC-3eR">
                                         <rect key="frame" x="85" y="386" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Le-kI-AyS">
                                         <rect key="frame" x="20" y="70" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -272,7 +260,7 @@ is to SERVE THE NEW CONSUMER...</string>
             </objects>
             <point key="canvasLocation" x="-3496" y="-1225"/>
         </scene>
-        <!--Company View Controller - CodeConduct-->
+        <!--CodeConduct-->
         <scene sceneID="K5G-oG-a5l">
             <objects>
                 <viewController title="CodeConduct" id="Pye-5T-gKc" customClass="CompanyViewController" sceneMemberID="viewController">
@@ -286,7 +274,6 @@ is to SERVE THE NEW CONSUMER...</string>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UbV-cU-ZKh">
                                 <rect key="frame" x="15" y="0.0" width="290" height="474"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">UNLIMITED NETWORK OF OPPORTUNITIES INTERNATIONAL CORPORATION CODE OF CONDUCT AND ETHICAL STANDARD Pursuant to company’s core values of Credibility, Leadership, Equality, Allegiance and Resiliency,
  ( C L E A R ) all members are strictly enjoined to observe the following Code of Conduct:
@@ -387,7 +374,7 @@ Distributors whose account are dormant or inactive for more then one (1) year ar
             </objects>
             <point key="canvasLocation" x="-2689" y="-1217"/>
         </scene>
-        <!--Company View Controller - MissionVision-->
+        <!--MissionVision-->
         <scene sceneID="Ssl-Wl-ttK">
             <objects>
                 <viewController title="MissionVision" id="Wdy-Wq-Er9" customClass="CompanyViewController" sceneMemberID="viewController">
@@ -401,34 +388,28 @@ Distributors whose account are dormant or inactive for more then one (1) year ar
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScW-FC-QME">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dsv-1x-xWv">
                                         <rect key="frame" x="20" y="60" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission &amp; Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-ao-vZr">
                                         <rect key="frame" x="84" y="74" width="127" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bof-Ed-wEp">
                                         <rect key="frame" x="20" y="145" width="122" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Mission" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mF-gA-D0T">
                                         <rect key="frame" x="20" y="350" width="122" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="363" translatesAutoresizingMaskIntoConstraints="NO" id="2kB-FQ-olV">
                                         <rect key="frame" x="28" y="136" width="363" height="123"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">To be the # 1 network marketing opportunity in 
 the world..</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -436,7 +417,6 @@ the world..</string>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To provide the best products  and services, to produce more successful entrepreneurs." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="326" translatesAutoresizingMaskIntoConstraints="NO" id="4Xw-sC-aBV">
                                         <rect key="frame" x="28" y="363" width="326" height="101"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -458,7 +438,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-2689" y="-2042"/>
         </scene>
-        <!--Company View Controller - Certificates-->
+        <!--Certificates-->
         <scene sceneID="LLV-D7-DZo">
             <objects>
                 <viewController title="Certificates" id="ftE-5F-dob" customClass="CompanyViewController" sceneMemberID="viewController">
@@ -472,51 +452,39 @@ the world..</string>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLt-2q-wfb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jxd-vL-jhu">
                                         <rect key="frame" x="66" y="112" width="85" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aVi-hi-GWe">
                                         <rect key="frame" x="166" y="112" width="85" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn3.png" translatesAutoresizingMaskIntoConstraints="NO" id="tGM-Zk-k45">
                                         <rect key="frame" x="66" y="205" width="85" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn4.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mr7-lQ-wEK">
                                         <rect key="frame" x="163" y="205" width="90" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="YWS-DE-S4k">
                                         <rect key="frame" x="20" y="54" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn5.png" translatesAutoresizingMaskIntoConstraints="NO" id="sJC-3R-nxg">
                                         <rect key="frame" x="63" y="298" width="90" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn6.png" translatesAutoresizingMaskIntoConstraints="NO" id="dfk-uH-T17">
                                         <rect key="frame" x="159" y="298" width="98" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn7.png" translatesAutoresizingMaskIntoConstraints="NO" id="dA9-yD-EgZ">
                                         <rect key="frame" x="53" y="391" width="98" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn8.png" translatesAutoresizingMaskIntoConstraints="NO" id="nBy-8e-GzO">
                                         <rect key="frame" x="159" y="391" width="98" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn9.png" translatesAutoresizingMaskIntoConstraints="NO" id="xlG-tR-8c5">
                                         <rect key="frame" x="55" y="470" width="98" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Certificates" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMO-xi-BBF">
                                         <rect key="frame" x="78" y="68" width="93" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -558,7 +526,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-6345" y="-795"/>
         </scene>
-        <!--Videos View Controller - Item-->
+        <!--Item-->
         <scene sceneID="nl2-Pf-bOz">
             <objects>
                 <viewController id="uhR-Oq-GaW" customClass="VideosViewController" sceneMemberID="viewController">
@@ -572,7 +540,6 @@ the world..</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-EG-D25">
                                 <rect key="frame" x="88" y="161" width="145" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" Master AVP" image="ic_aboutus.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -591,7 +558,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-5942" y="-795"/>
         </scene>
-        <!--Second View Controller - Products-->
+        <!--Products-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
                 <viewController title="Products" id="QUy-BD-bpt" customClass="SecondViewController" sceneMemberID="viewController">
@@ -605,7 +572,6 @@ the world..</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vne-1v-BBh">
                                 <rect key="frame" x="43" y="71" width="105" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -627,7 +593,6 @@ the world..</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1GW-fC-D92">
                                 <rect key="frame" x="189" y="71" width="89" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -649,7 +614,6 @@ the world..</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="igj-1k-xLC">
                                 <rect key="frame" x="43" y="178" width="105" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -671,7 +635,6 @@ the world..</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wwk-Jt-d8f">
                                 <rect key="frame" x="189" y="178" width="89" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -693,7 +656,6 @@ the world..</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tux-bF-dgO">
                                 <rect key="frame" x="43" y="295" width="120" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="31" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -715,7 +677,6 @@ the world..</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7gy-l3-cr5">
                                 <rect key="frame" x="189" y="295" width="89" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="titleEdgeInsets" minX="-40" minY="51" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="30"/>
                                 <size key="titleShadowOffset" width="9" height="11"/>
@@ -737,7 +698,6 @@ the world..</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSx-nr-DG6">
                                 <rect key="frame" x="67" y="442" width="186" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" watch product avp" image="playbutton_small.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -781,7 +741,6 @@ the world..</string>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zK-aN-XjS">
                                 <rect key="frame" x="83" y="152" width="40" height="28"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -845,7 +804,6 @@ the world..</string>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0p2-8o-f5d">
                                 <rect key="frame" x="5" y="81" width="310" height="405"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -858,7 +816,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-2636" y="-2750"/>
         </scene>
-        <!--Third View Controller - Ten Ways-->
+        <!--Ten Ways-->
         <scene sceneID="qj7-nG-dyA">
             <objects>
                 <viewController title="Ten Ways" id="erF-xz-glj" customClass="ThirdViewController" sceneMemberID="viewController">
@@ -872,7 +830,6 @@ the world..</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0de-M6-bzT">
                                 <rect key="frame" x="54" y="103" width="212" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="10 Ways Philippines" image="ic_aboutus.png">
@@ -885,7 +842,6 @@ the world..</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DLd-gN-LsO">
                                 <rect key="frame" x="59" y="198" width="212" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="10 Ways International" image="ic_aboutus.png">
@@ -898,7 +854,6 @@ the world..</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qz-9S-LBI">
                                 <rect key="frame" x="39" y="302" width="243" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" Download Marketing Plan" image="downloadicon.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -938,16 +893,13 @@ the world..</string>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgport.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-oi-bdp">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_name.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ti-3W-cLJ">
                                 <rect key="frame" x="40" y="220" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-Y2-IE1">
                                 <rect key="frame" x="40" y="356" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1011,7 +963,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-6819" y="-1622"/>
         </scene>
-        <!--Fifth View Controller - Videos-->
+        <!--Videos-->
         <scene sceneID="6zj-OS-6cU">
             <objects>
                 <viewController title="Videos" id="4AL-Mi-LvW" customClass="FifthViewController" sceneMemberID="viewController">
@@ -1025,16 +977,13 @@ the world..</string>
                         <subviews>
                             <webView contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyT-sL-wtl">
                                 <rect key="frame" x="0.0" y="56" width="300" height="233"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_tenways.png" translatesAutoresizingMaskIntoConstraints="NO" id="M05-zR-yn4">
                                 <rect key="frame" x="20" y="100" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwt-nK-jSb">
                                 <rect key="frame" x="20" y="179" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Video">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1210,7 +1159,7 @@ the world..</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="MiB-Jb-i1X">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="MiB-Jb-i1X">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MiB-Jb-i1X" id="HFe-P6-SdL">
@@ -1225,12 +1174,42 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Rpt-1u-qrP"/>
+                    <connections>
+                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="cvY-NK-O6B"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9C-yH-f7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2303" y="-543"/>
+            <point key="canvasLocation" x="-2279" y="-543"/>
         </scene>
-        <!--Fourth View Controller - Product Packages-->
+        <!--Details View Controller-->
+        <scene sceneID="sGU-ZX-S6s">
+            <objects>
+                <viewController id="KPe-Vq-rV4" customClass="DetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g0v-6N-JmX"/>
+                        <viewControllerLayoutGuide type="bottom" id="e04-PH-Frl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hkm-yT-Hdy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hfn-cd-RRm">
+                                <rect key="frame" x="0.0" y="64" width="320" height="299"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oLk-Jf-6EV"/>
+                    <connections>
+                        <outlet property="productImage" destination="Hfn-cd-RRm" id="goY-BN-WFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWH-2s-woE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1915" y="-543"/>
+        </scene>
+        <!--Product Packages-->
         <scene sceneID="MiM-m8-00O">
             <objects>
                 <viewController title="Product Packages" id="bVJ-R0-k7V" customClass="FourthViewController" sceneMemberID="viewController">
@@ -1244,7 +1223,6 @@ the world..</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9IS-pe-4sj">
                                 <rect key="frame" x="30" y="179" width="261" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title=" Country   Product Packages" image="prod_packages.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1304,7 +1282,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-3464" y="-543"/>
         </scene>
-        <!--Navigation Controller - Our Company-->
+        <!--Our Company-->
         <scene sceneID="QaO-tc-KuW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="eyN-w8-MGC" sceneMemberID="viewController">
@@ -1324,7 +1302,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-5345" y="-1622"/>
         </scene>
-        <!--Navigation Controller - Products-->
+        <!--Products-->
         <scene sceneID="eqx-ey-kUb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="sLC-BG-th1" sceneMemberID="viewController">
@@ -1344,7 +1322,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-5345" y="-950"/>
         </scene>
-        <!--Navigation Controller - Ten Ways-->
+        <!--Ten Ways-->
         <scene sceneID="Mfr-SR-lQd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="8ap-sF-2WE" sceneMemberID="viewController">
@@ -1364,7 +1342,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-4819" y="-2330"/>
         </scene>
-        <!--Navigation Controller - Product Packages-->
+        <!--Product Packages-->
         <scene sceneID="GG1-wy-88v">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NwI-Tk-aHK" sceneMemberID="viewController">
@@ -1601,7 +1579,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-3818" y="-3589"/>
         </scene>
-        <!--Data View Controller - International-->
+        <!--International-->
         <scene sceneID="fH4-ti-K5U">
             <objects>
                 <viewController storyboardIdentifier="DataViewController" title="International" id="kRi-Ct-JUl" customClass="DataViewController" sceneMemberID="viewController">
@@ -1615,7 +1593,6 @@ the world..</string>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0l-EN-m3L">
                                 <rect key="frame" x="5" y="59" width="310" height="435"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

@@ -14,7 +14,7 @@
 		<string>https://github.com/theoreticsinc/uno1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>uno.xcodeproj/project.xcworkspace</string>
+	<string>uno.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E22582A8217E1CEE2066385EBE2782AF77D6D3D9</key>
