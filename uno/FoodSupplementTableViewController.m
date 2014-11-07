@@ -13,6 +13,7 @@
 
 @implementation FoodSupplementTableViewController {
     NSArray *products;
+    NSArray *productsIcons;
     NSArray *productsImages;
 }
 
@@ -28,8 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    products = [NSArray arrayWithObjects:@"Glutathione", @"Supercharged",@"Fit Right",@"Grape Seed Extract",@"Kryptorganic",@"Ultima - C", @"Coco Oil", @"Wheatgrass", nil];
-    productsImages = [NSArray arrayWithObjects:@"gluta.png", @"supercharge.png",@"Fit-Right.png",@"grapeseed.png",@"kryptorganic.png",@"ultimaC.png",@"virginoil.png",@"wheat.png",  nil];
+    products = [NSArray arrayWithObjects:@"Glutathione Capsule", @"Supercharged",@"Fit Right",@"Grape Seed Extract",@"Kryptorganic",@"Ultima - C", @"Coco Oil", @"Wheatgrass", nil];
+    productsIcons = [NSArray arrayWithObjects:@"gluta.png", @"supercharge.png",@"Fit-Right.png",@"grapeseed.png",@"kryptorganic.png",@"ultimaC.png",@"virginoil.png",@"wheat.png",  nil];
+    productsImages = [NSArray arrayWithObjects:@"prod_glutacap.jpg", @"prod_supercharged.jpg",@"prod_fitright.jpg",@"prod_grapeseed.jpg",@"prod_kryptorganic.jpg",@"prod_ultimac.jpg",@"prod_coco_oil.jpg",@"prod_wheatgrass_barley.jpg",  nil];
     self.navigationItem.title = @"UNO Food Supplement";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStyleDone target:self action:@selector(back)];
@@ -58,7 +60,7 @@
     }
     
     cell.textLabel.text = [products objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[productsImages objectAtIndex:indexPath.row]];
+    cell.imageView.image = [UIImage imageNamed:[productsIcons objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -72,6 +74,33 @@
  // Pass the selected object to the new view controller.
  }
  */
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    /*
+     To illustrate the effect of highlighting the cell, don't set the selection style to None in the storyboard, instead implement this method to immediately deselect the cell.
+     */
+    NSLog(@"SELECTED: ");
+    [self performSegueWithIdentifier:@"pushProducts" sender:self];
+    //[self performSegueWithIdentifier:@"showRecipeDetail" parameters:@{@"customParam1":@"testing1", @"customValue2":@"testing2"}];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"pushProducts"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *youtubelink = [NSString stringWithFormat:@"youtube_%@", [products objectAtIndex:indexPath.row]];
+        NSString *desclink = [NSString stringWithFormat:@"desc_%@", [products objectAtIndex:indexPath.row]];
+        
+        DetailsViewController *destViewController = segue.destinationViewController;
+        
+        destViewController.recipeName = NSLocalizedString(desclink, nil);
+        destViewController.youtube_link = NSLocalizedString(youtubelink, nil);
+        NSLog(@"YOUTUBE%@", destViewController.youtube_link);
+        destViewController.imageFile = [productsImages objectAtIndex:indexPath.row];
+        
+    }
+}
 
 -(void)back {
     NSLog(@"Back button Pressed");

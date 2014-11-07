@@ -17,6 +17,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="Bs5-Le-Jcx" kind="relationship" relationship="viewControllers" id="ftc-13-Ag7"/>
                         <segue destination="eyN-w8-MGC" kind="relationship" relationship="viewControllers" id="IIk-SZ-aeL"/>
                         <segue destination="sLC-BG-th1" kind="relationship" relationship="viewControllers" id="uXm-4y-jjh"/>
                         <segue destination="8ap-sF-2WE" kind="relationship" relationship="viewControllers" id="foL-zf-cfI"/>
@@ -526,7 +527,7 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-6345" y="-795"/>
         </scene>
-        <!--Item-->
+        <!--Videos-->
         <scene sceneID="nl2-Pf-bOz">
             <objects>
                 <viewController id="uhR-Oq-GaW" customClass="VideosViewController" sceneMemberID="viewController">
@@ -552,7 +553,7 @@ the world..</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="tab_videos.png" id="ZTn-wJ-nL9"/>
+                    <tabBarItem key="tabBarItem" title="Videos" image="tab_videos.png" id="ZTn-wJ-nL9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDM-5t-WhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -891,10 +892,6 @@ the world..</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgport.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-oi-bdp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <gestureRecognizers/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_name.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ti-3W-cLJ">
                                 <rect key="frame" x="40" y="220" width="240" height="128"/>
                             </imageView>
@@ -1028,6 +1025,9 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="6Dg-VI-iod"/>
+                    <connections>
+                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="Uoo-rp-emQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ON6-im-c0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1057,6 +1057,9 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="sx8-4P-jp0"/>
+                    <connections>
+                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="D4x-GD-ECa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPf-08-wmw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1086,10 +1089,13 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Ry5-Sq-nC0"/>
+                    <connections>
+                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="ZRK-fr-azQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7g-fW-VD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2366" y="149"/>
+            <point key="canvasLocation" x="-2377" y="149"/>
         </scene>
         <!--Household Table View Controller-->
         <scene sceneID="9zz-sw-pyX">
@@ -1115,6 +1121,9 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xBV-JS-CHj"/>
+                    <connections>
+                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="ntj-ga-jt0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjM-AX-Z4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1145,6 +1154,9 @@ the world..</string>
                     </tableView>
                     <navigationItem key="navigationItem" id="Xoc-UC-TIw"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="tva-zy-661"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5MQ-e9-6FI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1194,20 +1206,73 @@ the world..</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hfn-cd-RRm">
-                                <rect key="frame" x="0.0" y="64" width="320" height="299"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-y8-a8a">
+                                <rect key="frame" x="0.0" y="428" width="99" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" Product" image="playbutton_small.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DZ-f0-pUZ">
+                                <rect key="frame" x="186" y="428" width="126" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" Testimonial" image="playbutton_small.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAI-JH-bZ0">
+                                <rect key="frame" x="96" y="428" width="100" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" Science" image="playbutton_small.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bL-vn-hBP">
+                                <rect key="frame" x="21" y="64" width="268" height="146"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyB-DB-Nhb">
+                                <rect key="frame" x="0.0" y="206" width="320" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Lorem ipsum dolor sit er ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="oLk-Jf-6EV"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
-                        <outlet property="productImage" destination="Hfn-cd-RRm" id="goY-BN-WFh"/>
+                        <outlet property="productDesc" destination="vyB-DB-Nhb" id="IYr-ST-qII"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWH-2s-woE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1915" y="-543"/>
+            <point key="canvasLocation" x="-1772" y="-452"/>
         </scene>
         <!--Product Packages-->
         <scene sceneID="MiM-m8-00O">
@@ -1224,7 +1289,7 @@ the world..</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9IS-pe-4sj">
                                 <rect key="frame" x="30" y="179" width="261" height="112"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title=" Country   Product Packages" image="prod_packages.png">
+                                <state key="normal" title=" Country   Product Packages" image="ic_prod_packages.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1342,11 +1407,38 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-4819" y="-2330"/>
         </scene>
-        <!--Product Packages-->
+        <!--Home-->
+        <scene sceneID="VSG-6A-UGV">
+            <objects>
+                <viewController id="Bs5-Le-Jcx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NND-uM-uUU"/>
+                        <viewControllerLayoutGuide type="bottom" id="VEh-6l-Wii"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hGd-Hc-EqK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgport.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="S9M-V3-T53">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="435"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_name.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Gi-dc-AvL">
+                                <rect key="frame" x="91" y="181" width="139" height="63"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="tab_home.png" id="fXa-og-gY8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4J-Nb-o26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6491" y="-2298"/>
+        </scene>
+        <!--Packages-->
         <scene sceneID="GG1-wy-88v">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NwI-Tk-aHK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Product Packages" image="tab_prod_packages.png" id="b4Q-e7-D5F"/>
+                    <tabBarItem key="tabBarItem" title="Packages" image="tab_prod_packages.png" id="b4Q-e7-D5F"/>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x7e-qW-aae">
@@ -1632,11 +1724,12 @@ the world..</string>
         <image name="ic_householdproducts.png" width="50" height="50"/>
         <image name="ic_mission.png" width="50" height="50"/>
         <image name="ic_peoplecare.png" width="50" height="50"/>
+        <image name="ic_prod_packages.png" width="50" height="50"/>
         <image name="ic_tenways.png" width="50" height="50"/>
         <image name="playbutton_small.png" width="35" height="35"/>
-        <image name="prod_packages.png" width="113" height="112"/>
         <image name="tab_10ways.png" width="32" height="32"/>
         <image name="tab_company.png" width="32" height="32"/>
+        <image name="tab_home.png" width="32" height="32"/>
         <image name="tab_prod_packages.png" width="32" height="32"/>
         <image name="tab_products.png" width="32" height="32"/>
         <image name="tab_videos.png" width="32" height="32"/>
@@ -1647,4 +1740,7 @@ the world..</string>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="ntj-ga-jt0"/>
+    </inferredMetricsTieBreakers>
 </document>

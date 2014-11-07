@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C556C92C-7401-4CC9-AA48-2C595917E202</string>
 	<key>IDESourceControlProjectName</key>
-	<string>uno</string>
+	<string>Uno</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E22582A8217E1CEE2066385EBE2782AF77D6D3D9</key>
 		<string>https://github.com/theoreticsinc/uno1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>uno.xcodeproj</string>
+	<string>Uno.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E22582A8217E1CEE2066385EBE2782AF77D6D3D9</key>

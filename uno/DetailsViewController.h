@@ -10,7 +10,10 @@
 
 @interface DetailsViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *productImage;
+@property (weak, nonatomic) IBOutlet UITextView *productDesc;
+
 @property (strong) NSString *recipeName;
 @property (strong) NSString *imageFile;
+@property (strong) NSString *youtube_link;
 
 @end

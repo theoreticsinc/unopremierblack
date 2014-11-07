@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailsViewController.h"
 
 @interface HealthyDrinksTableViewController : UITableViewController
 

@@ -15,6 +15,8 @@
 @synthesize recipeName;
 @synthesize imageFile;
 @synthesize productImage;
+@synthesize productDesc;
+@synthesize youtube_link;
 
 - (void)viewDidLoad {
     NSString *imageFilename = [NSString stringWithFormat:@"%@", imageFile];
@@ -24,7 +26,7 @@
     image = [UIImage imageNamed:imageFilename];
                       //initWithImage:[UIImage imageNamed:imageFilename]];
     productImage.image = image;
-
+    [productDesc setText:recipeName];
     [productImage setImage:[UIImage imageNamed:imageFilename]];
     [self.view addSubview: productImage];
     [self.view bringSubviewToFront: productImage];
@@ -48,5 +50,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)productsBtn:(id)sender {
+    NSURL *url = [ [ NSURL alloc ] initWithString: youtube_link ];
+    
+    [[UIApplication sharedApplication] openURL:url];
+}
 
 @end

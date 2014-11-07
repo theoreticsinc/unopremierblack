@@ -13,8 +13,8 @@
 
 @implementation HealthyDrinksTableViewController {
     NSArray *products;
+    NSArray *productsIcons;
     NSArray *productsImages;
-    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,7 +30,8 @@
 {
     [super viewDidLoad];
     products = [NSArray arrayWithObjects:@"8-in-1 Coffee", @"8-in-1 Coffee Lite",@"Prime Juice",@"1st Health Acai Berry Juice",@"Cappuccino",@"Choco 8", @"Corn Coffee", nil];
-    productsImages = [NSArray arrayWithObjects:@"8in1coffee.png", @"8in1coffeeLite.png",@"primejuice.png",@"acaiberry.png",@"cappucino.png",@"choco8.png", @"cornCoffee.png", nil];
+    productsIcons = [NSArray arrayWithObjects:@"8in1coffee.png", @"8in1coffeeLite.png",@"primejuice.png",@"acaiberry.png",@"cappuccino.png",@"choco8.png", @"cornCoffee.png", nil];
+     productsImages = [NSArray arrayWithObjects:@"prod_8in1.jpg", @"prod_8in1lite.jpg",@"prod_primejuice.jpg",@"prod_acai_berry.jpg",@"prod_cappuccino.jpg",@"prod_choco8.jpg", @"prod_corncoffee.jpg", nil];
     
     self.navigationItem.title = @"UNO Healthy Drinks";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
@@ -60,7 +61,7 @@
     }
     
     cell.textLabel.text = [products objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[productsImages objectAtIndex:indexPath.row]];
+    cell.imageView.image = [UIImage imageNamed:[productsIcons objectAtIndex:indexPath.row]];
     
     return cell;
 }
@@ -75,6 +76,34 @@
  // Pass the selected object to the new view controller.
  }
  */
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    /*
+     To illustrate the effect of highlighting the cell, don't set the selection style to None in the storyboard, instead implement this method to immediately deselect the cell.
+     */
+    NSLog(@"SELECTED: ");
+    [self performSegueWithIdentifier:@"pushProducts" sender:self];
+    //[self performSegueWithIdentifier:@"showRecipeDetail" parameters:@{@"customParam1":@"testing1", @"customValue2":@"testing2"}];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"pushProducts"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *youtubelink = [NSString stringWithFormat:@"youtube_%@", [products objectAtIndex:indexPath.row]];
+        NSString *desclink = [NSString stringWithFormat:@"desc_%@", [products objectAtIndex:indexPath.row]];
+        
+        DetailsViewController *destViewController = segue.destinationViewController;
+        
+        destViewController.recipeName = NSLocalizedString(desclink, nil);
+        destViewController.youtube_link = NSLocalizedString(youtubelink, nil);
+        NSLog(@"YOUTUBE%@", destViewController.youtube_link);
+        destViewController.imageFile = [productsImages objectAtIndex:indexPath.row];
+        
+    }
+}
+
 
 -(void)back {
     NSLog(@"Back button Pressed");

@@ -13,6 +13,7 @@
 
 @implementation BeautyProductsTableViewController {
     NSArray *products;
+    NSArray *productsIcons;
     NSArray *productsImages;
 }
 
@@ -29,7 +30,9 @@
 {
     [super viewDidLoad];
     products = [NSArray arrayWithObjects:@"Glutathione", @"Kojic Soap",@"Body Works",@"Glutathione Soap",@"Health Hair Treats",@"Magic Cream", @"Natura White", @"Nutri Hair", @"Thanakha", nil];
-    productsImages = [NSArray arrayWithObjects:@"gluLight.png", @"kojic.png",@"bodyworks.png",@"glusoap.png",@"hairtreats.png",@"magic_cream.png", @"naturaWhite.png", @"nutrihair.png", @"thanakha.png", nil];
+    productsIcons = [NSArray arrayWithObjects:@"gluLight.png", @"kojic.png",@"bodyworks.png",@"glusoap.png",@"hairtreats.png",@"magic_cream.png", @"naturaWhite.png", @"nutrihair.png", @"thanakha.png", nil];
+    productsImages = [NSArray arrayWithObjects:@"prod_glutalotion.jpg", @"prod_kojic.jpg",@"prod_bodyworks.jpg",@"prod_glutasoap.jpg",@"prod_hairtreats.jpg",@"prod_magiccream.jpg", @"prod_naturewhite.jpg", @"prod_nutrihair.jpg", @"prod_thanakha.jpg", nil];
+    
     self.navigationItem.title = @"UNO Beauty Products";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStyleDone target:self action:@selector(back)];
@@ -59,7 +62,7 @@
     }
     
     cell.textLabel.text = [products objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[productsImages objectAtIndex:indexPath.row]];
+    cell.imageView.image = [UIImage imageNamed:[productsIcons objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -77,10 +80,16 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"pushProducts"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *youtubelink = [NSString stringWithFormat:@"youtube_%@", [products objectAtIndex:indexPath.row]];
+        NSString *desclink = [NSString stringWithFormat:@"desc_%@", [products objectAtIndex:indexPath.row]];
+        
         DetailsViewController *destViewController = segue.destinationViewController;
-        NSLog(@"PRODUCT: %@", [products objectAtIndex:indexPath.row]);
-        destViewController.recipeName = [products objectAtIndex:indexPath.row];
-        destViewController.imageFile = [productsImages objectAtIndex:indexPath.row];;
+        
+        destViewController.recipeName = NSLocalizedString(desclink, nil);
+        destViewController.youtube_link = NSLocalizedString(youtubelink, nil);
+        NSLog(@"YOUTUBE%@", destViewController.youtube_link);
+        destViewController.imageFile = [productsImages objectAtIndex:indexPath.row];
+        
     }
 }
 

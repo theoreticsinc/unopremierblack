@@ -11,6 +11,4 @@
 
 @interface BeautyProductsTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSString *myData;
-
 @end
