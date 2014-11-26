@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SDO-4B-znz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SDO-4B-znz">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -21,8 +21,6 @@
                         <segue destination="eyN-w8-MGC" kind="relationship" relationship="viewControllers" id="IIk-SZ-aeL"/>
                         <segue destination="sLC-BG-th1" kind="relationship" relationship="viewControllers" id="uXm-4y-jjh"/>
                         <segue destination="8ap-sF-2WE" kind="relationship" relationship="viewControllers" id="foL-zf-cfI"/>
-                        <segue destination="NwI-Tk-aHK" kind="relationship" relationship="viewControllers" id="osS-01-ClC"/>
-                        <segue destination="rvR-7t-7UW" kind="relationship" relationship="viewControllers" id="OKQ-gB-uSp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8p-54-nGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -41,104 +39,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ntI-R6-jnf">
-                                <rect key="frame" x="51" y="74" width="102" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-20" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_aboutus.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="About Us">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About UNO Premier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ab-NQ-TSU">
+                                <rect key="frame" x="0.0" y="95" width="320" height="21"/>
+                                <color key="backgroundColor" red="0.31372549019607843" green="0.28627450980392155" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4d-ak-eYc" userLabel="Button1">
+                                <rect key="frame" x="58" y="143" width="84" height="99"/>
+                                <state key="normal" image="button1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnAbtUs:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="rwu-xF-XP1"/>
+                                    <action selector="btnAbtUs:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="Cbn-Ar-MCm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4e-5V-wSC">
-                                <rect key="frame" x="161" y="74" width="102" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-50" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_directors.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Board of Directors">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jum-om-KOx" userLabel="Button2">
+                                <rect key="frame" x="176" y="143" width="84" height="99"/>
+                                <state key="normal" image="button2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnBoardDirectors:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="umT-Az-bcD"/>
+                                    <action selector="btnCodeConduct:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="nZk-vj-9Ae"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XR-J7-ypf">
-                                <rect key="frame" x="58" y="196" width="102" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_mission.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Mission &amp; Vision">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsG-eV-SQ4" userLabel="Button4">
+                                <rect key="frame" x="58" y="262" width="84" height="99"/>
+                                <state key="normal" image="button4.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="pgL-pT-lEr"/>
+                                    <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="F2D-4j-uGH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ok-eG-E4t">
-                                <rect key="frame" x="168" y="196" width="102" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_conduct.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Code of Conduct">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvM-wg-TB7">
+                                <rect key="frame" x="0.0" y="383" width="320" height="10"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.28627450980000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.5499999999999996" height="0.49999999999999961"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="5"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="qHv-t6-EJo">
+                                <rect key="frame" x="40" y="21" width="240" height="66"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm3-Mv-oah" userLabel="Button3">
+                                <rect key="frame" x="176" y="262" width="84" height="99"/>
+                                <state key="normal" image="button3.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnCodeConduct:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="vrT-2T-Gp8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DrL-rG-EOw">
-                                <rect key="frame" x="58" y="310" width="102" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-30" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="26" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_certificates.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Certificates">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="btnCertificates:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="Ijg-8N-oQr"/>
+                                    <action selector="btnBoardDirectors:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="dBn-Kk-RN5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4819" y="-1622"/>
+            <point key="canvasLocation" x="-4849" y="-1693"/>
         </scene>
         <!--AboutUs-->
         <scene sceneID="PvD-Pk-RTb">
@@ -174,35 +126,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="GC8-Yt-9fb">
                                 <rect key="frame" x="13" y="61" width="50" height="50"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About UNO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bx-F1-QDT">
-                                <rect key="frame" x="71" y="75" width="93" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UNO Premier" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bx-F1-QDT">
+                                <rect key="frame" x="71" y="75" width="138" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBn-Es-qg7">
-                                <rect key="frame" x="13" y="125" width="292" height="351"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Unlimited Network of Opportunities International Corporation 
-(or UNO) is a convergence of the finest network marketers in 
-the country today as they offer new opportunities, conquer 
-new challenges and welcome new partners in this impressive 
-and generous way of extending help to millions of Filipinos 
-here and abroad.  UNO is a dynamic marketing company engaged in the 
-distribution of health enhancing natural products and other
-services that address the needs of modern living. UNO is ran 
-by top network industry leaders whose credibility has been 
-years in the making. In its forefront are top-caliber 
-professionals and successful network marketers with several 
-years of experience in leverage marketing. UNO takes on to 
-deliver a performance breakthrough!. It is definite that UNO is poised to be among the major 
-players in the industry of network marketing. All the vital 
-elements to drive in a new curve of new markets and 
-technologies are present. They equip every network marketer 
-the convenience of simultaneously marketing fast-moving 
-health and wellness products.. It is very much in the interest of UNO leaders that today's 
-challenges be fulfilled without divisions and delays, and that 
-is to SERVE THE NEW CONSUMER...</string>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jha-VZ-YhT">
+                                <rect key="frame" x="16" y="112" width="288" height="371"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">UNO Premier is a dynamic marketing company that was derived from the foundation of a very long history of Leadership, Management and Entrepreneurism. UNO Premier’s Mother Company UNO started its rising 8 years ago and blossomed throughout the network marketing Industry like rapid fire and became a network marketing sensation and has created over 800 Philippine millionaires over the short span of 8 years which in itself is a natural phenomenon and today has over 100 offices spread out nationwide throughout the Philippines. 
+
+From the foundation of UNO comes the birth of UNO Premier. UNO Premier was specifically designed to penetrate the International Market and cater to a more refine class of mentality of high end professionals and entrepreneurs which categorically fall under what is known as the A, B and Upper C Markets among businessman and woman and likeminded professionals.
+
+Its vision from a business stand point from Products, Services, Marketing, Management and a powerhouse Compensation structure is what drives UNO Premier to the top of the Elite and separates itself from the common traditional Network marketing programs you see today. Uno Premier is poised as the next big International giant to create the next wave of millionaires.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -231,17 +168,14 @@ is to SERVE THE NEW CONSUMER...</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqv-kj-iEv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OrZ-AS-J0r">
-                                        <rect key="frame" x="85" y="70" width="150" height="150"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ne2-B9-lZR">
+                                        <rect key="frame" x="100" y="75" width="120" height="115"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dy8-xF-jMG">
-                                        <rect key="frame" x="85" y="228" width="150" height="150"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="y9E-0r-e0x">
+                                        <rect key="frame" x="100" y="198" width="120" height="115"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tPy-uC-3eR">
-                                        <rect key="frame" x="85" y="386" width="150" height="150"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Le-kI-AyS">
-                                        <rect key="frame" x="20" y="70" width="50" height="50"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MCO-Qu-qiA">
+                                        <rect key="frame" x="100" y="321" width="120" height="115"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -259,7 +193,7 @@ is to SERVE THE NEW CONSUMER...</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIW-zs-qDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3496" y="-1225"/>
+            <point key="canvasLocation" x="-3491" y="-1225"/>
         </scene>
         <!--CodeConduct-->
         <scene sceneID="K5G-oG-a5l">
@@ -273,96 +207,28 @@ is to SERVE THE NEW CONSUMER...</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UbV-cU-ZKh">
-                                <rect key="frame" x="15" y="0.0" width="290" height="474"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">UNLIMITED NETWORK OF OPPORTUNITIES INTERNATIONAL CORPORATION CODE OF CONDUCT AND ETHICAL STANDARD Pursuant to company’s core values of Credibility, Leadership, Equality, Allegiance and Resiliency,
- ( C L E A R ) all members are strictly enjoined to observe the following Code of Conduct:
- CODE NO. 1
- All members shall at all times, remain loyal to the company and its policies being issued from time to time by not committing acts which are not limited to associating, representing, sponsoring, conspiring in any mode and form for the benefit or advantage directly or indirectly of competing companies, partnership or individual, either domestic or abroad, neither introduce, present, promote, offer or sell, in any form nor manner their products, services and marketing programs and/or plans or a combination thereof, whether tangible or intangible.
-
-PENALTIES
-
-FIRST OFFENSE: Written Reprimand and one (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-
-SECOND OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind in favor of the company, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-
-
-CODE NO. 2
-All members are strictly enjoined to be honest in all conducts and dealings locally and abroad by not making, agitating, encouraging written or oral derogatory or defamatory remarks, utterances or any statement in any form that discredit and disrepute the company, its centers or any of its service branch, which at the same time malign the credibility of its officers and employees.
-PENALTIES
-FIRST OFFENSE: Written Reprimand and one (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-SECOND OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind in favor of the company, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 3
-All members are strictly enjoined to be professionals in all acts and bearings, dealings or transactions by not committing any false statements, such as, but not limited to misrepresentation, exaggeration, disinformation, vane promises, introducing spurious products or services, or circumventing the marketing plans or programs of the company that contravene the tenor and purposes thereof.
-PENALTIES
-FIRST OFFENSE: Written Reprimand and one (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-SECOND OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 4
-All members are strictly enjoined to be honest and credible in all deeds by not committing acts against the company or fellow members which are but not limited to:
-Imitating or counterfeiting any handwriting, or signature; causing it to appear that a member has participated in any act or activity when he did not in fact so participate; Alluding or pointing to members who have participated in an act, activity or statements other than those made by them; Inserting untruthful statements in a narration of facts such as those in the affidavit, deed and other documents similar thereto;
-Altering true dates; making any alteration or intercalation in a genuine document which alters or changes its meaning; Issuing in an authenticated form a document purporting to be a copy of an original document when no such original actually exists;
-PENALTY
-FIRST OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind in favor of the company, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
- CODE NO. 5
-All members are strictly enjoined to observe humility and respect towards fellow members, officers and employees of the company, by not committing directly or indirectly any inimical or malevolent acts which are but not limited to rudeness, disrespect and discourtesy.
-PENALTIES
-FIRST OFFENSE: Written Reprimand.
-SECOND OFFENSE: One (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-THIRD OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind, in favor of the company which accrued at the time of the commission of the violation, without prejudice to criminal prosecution
- CODE NO. 6
-All members are strictly enjoined to have sense of equality and sincerity toward fellow members by observing the 2-month rule, wherein a fellow member has 2 months from presentation of the marketing plan or program of the company and signing of any document towards membership by the prospective member, within which fellow member shall not interfere, intervene or alienate said prospective member at the prejudice of the first member. All members are enjoined to sell the products of the company based on the management approved price and avoid selling them at a lower price.
-PENALTIES
-FIRST OFFENSE: As to the member who interfered, intervened or alienated the prospective member within the 2-month period at the prejudice of the first member shall suffer the penalty of one (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation. On the other hand, the account of the prospective member who later became member shall be placed at the networking group of the first member;
-SECOND OFFENSE: Six (6) months deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-THIRD OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 7
-All members are strictly enjoined to be at all times clothe with integrity and sense of oneness and unity, by not committing any immoral act or conduct which tends to debase company policies, transgress decency, morals and good behavior, while inside or within the company premises, its centers or service branch, neither practice cross lining that obstructs oneness and unity between husband and wife nor commit acts that circumvent the same. It is by understanding and decree that husband and wife are considered as one and conjugal, so it is hereby, should be in one structure or group. If none compliance, it will be considered as cross lining by act.
-PENALTIES (As to immoral acts or conducts)
-FIRST OFFENSE: Written Reprimand with one (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-SECOND OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind, in favor of the company which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-PENALTIES (As to cross lining)
-FIRST OFFENSE: Affected account/s shall be recalled and will be placed under one networking group together with all their respective fruits and/or growth. Written Reprimand with one (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-SECOND OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 8
-All members are strictly enjoined not to commit any fraudulent act or false pretenses to the prejudice directly or indirectly of the company or fellow member by not committing acts which are not limited to:
-using a fictitious name, or dummy, or by means of other similar deceits purportedly to obtain personal gain and interest;
-by altering the quality, fineness or weight of the product or any products pertaining to the business of the company or imitating any of those products;
-any acts done to fellow member or to the company which constitute estafa, and other forms of swindling under the Revised Penal Code.
-PENALTIES
-FIRST OFFENSE: Written Reprimand with two (2) months deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-SECOND OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind in favor of the company, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 9
-No member shall exceed 15 accounts per name. Perfect structuring shall not be permissible. This includes as well illegal stacking of accounts to manipulate in purpose the compensation program of the Company. This shall comprise also using a fictitious name, or dummy, or by means of other similar deceits purportedly to obtain personal gain and interest.
-PENALTIES
-FIRST OFFENSE: Written Reprimand with two (2) months deactivation of all the accounts including accounts in question with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-SECOND OFFENSE: Perpetual deactivation of all the accounts including accounts in question, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind in favor of the company, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 10
-Access PIN Cards shall hereby permitted only to be encoded with in the 3 day timeframe upon the date of payment or purchase. The Sponsor or the person who assist the new member shall be held liable for the contravention specified.
-PENALTIES
-FIRST OFFENSE: Written Reprimand
-SECOND OFFENSE: (1) month deactivation of all the accounts including accounts in question with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-THIRD OFFENSE: Perpetual deactivation of all the accounts including accounts in question, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind in favor of the company, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 11
-No recruitment whatsoever of any UNO employees up to the 3rd degree level. It is unethical for the business that an employee of the Company shall earn directly or indirectly from the compensation plan that the Company make use of.
-PENALTIES
-FIRST OFFENSE: One (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-SECOND OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind, in favor of the company which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 12
-All members are strictly prohibited to encourage the acts of pawning, selling of any material objects such as laptop, cellphone, psp, jewelries and the likes in order to defray necessary expenses for the cost of the product package of any prospective members. This shall include demanding reservation and/or “down payment scheme” either in cash or in form of items (such as laptop, cellphone, psp, jewelries and the likes) to guaranty an alleged “slot” to encourage prospective distributors and Offering access PINS without the product package that made sold below the Company’s regulated price of Php7300; including persuading, directly or indirectly, other distributor either to acquire or sell access PINS/Cards.
-PENALTIES
-FIRST OFFENSE: One (1) month deactivation of all the accounts with forfeiture in favor of the company of all the benefits, privileges, commissions and other remunerations either monetary or in kind, which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-SECOND OFFENSE: Perpetual deactivation of all the accounts, as well as forfeiture of all benefits, privileges, commissions and other remunerations either monetary or in kind, in favor of the company which accrued at the time of the commission of the violation, without prejudice to criminal prosecution.
-CODE NO. 13
-1. All access PINs will have a 4- day validity period.
-2. The NEW distributor should encode the PIN within the 4-day validity period at UNO website and change the password.
-3. The payee will be liable when the PINs expire. He or she will be penalized.
-4. UNO and UBC cashiers are required to record the names of the NEW distributor or OLD distributor who paid for the PIN. In case of violation, the responsible party will be sanctioned.
-PENALTY. Any violation of this rule shall be penalized as follows:
-FIRST OFFENSE: Suspension of account for 30 days and will have to pay all expired PINs purchased.
-SECOND OFFENSE: TERMINATION OF ACCOUNT and will have to pay all expired PINs purchased.
-ADDITIONAL PROVISION ON UNO CODE OF CONDUCT
-Distributors whose account are dormant or inactive for more then one (1) year are allowed to join another group when they resume their active distributorship at UNO, provided that the concerned distributors have obtained the prior written consent and approval of UNO management before joining a new group.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Compensation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6e-T3-l2Z">
+                                <rect key="frame" x="62" y="61" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-A2-R1N">
+                                <rect key="frame" x="6" y="52" width="48" height="43"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mST-QV-Ti0">
+                                <rect key="frame" x="9" y="96" width="295" height="430"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">In designing UNO Premier's compensation plan, William Barbo, Herbie and Oliver Chua continually asked one simple question: "How would we want to be compensated if we were UNO Premier Consultants?” Being former Successful Network Marketers themselves, this gave them the ability to design a compensation plan and set a New Standard in rewarding Marketers and Business Entrepreneurs alike. Thru their combined experience, they set forth to gather the top compensation plans in the industry and carefully studied all the pros and cons, taking the best concepts of each one and formulated a well-balanced hybrid leveraging compensation structure, that is not only incredibly powerful with tremendous leverage, but delivers life changing results at every level of the business – from getting started to building a personal long term empire. 
+When the big 3 were faced with this challenge, they knew that in order to successfully execute this, its design had to be in the right balance,where its payout would be incredibly strong upfront but at the same time without compromising the safety net of the company by over pay.  They wanted to create a compensation structure that would eliminate the high attrition rate and reward the new starting consultants with a sustainable high return and long term residual made it even better. Get ready 2015 because it’s going to be the ride of a lifetime and history is about to repeat itself, but this time exponentially!” drives UNO Premier to the top of the Elite and separates itself from the common traditional network marketing programs seen today. UNO Premier is poised as the next big International giant to create the next wave of millionaires.
+UNO Premier
+UNO Premier is a dynamic marketing company that was derived from the foundation of a very long history of Leadership, Management and Entrepreneurism. UNO Premier’s Mother Company UNO started its rising eight years ago and blossomed throughout the network marketing industry like rapid fire and became a network marketing sensation that has created over 800 Philippine millionaires over the short span of 8 years, which in itself is a natural phenomenon.  Today UNO Premier has over 100 offices spread out nationwide in the Philippines.
+From the foundation of UNO comes the birth of UNO Premier. UNO Premier was specifically designed to penetrate the Philippine and International Markets and cater to a more refined class mentality of high end professionals and entrepreneurs which categorically fall under what is known as the A, B and Upper C Markets and likeminded professionals.  
+Its vision from a business stand point from products, services, marketing, management and a powerhouse compensation structure, is what drives UNO Premier to the top of the Elite and separates itself from the common traditional network marketing programs seen today. UNO Premier is poised as the next big International giant to create the next wave of millionaires.
+NO Premier is a dynamic marketing company that was derived from the foundation of a very long history of Leadership, Management and Entrepreneurism. UNO Premier’s Mother Company UNO started its rising eight years ago and blossomed throughout the network marketing industry like rapid fire and became a network marketing sensation that has created over 800 Philippine millionaires over the short span of 8 years, which in itself is a natural phenomenon.  Today UNO Premier has over 100 offices spread out nationwide in the Philippines.
+From the foundation of UNO comes the birth of UNO Premier. UNO Premier was specifically designed to penetrate the Philippine and International Markets and cater to a more refined class mentality of high end professionals and entrepreneurs which categorically fall under what is known as the A, B and Upper C Markets and likeminded professionals.  
+Its vision from a business stand point from products, services, marketing, management and a powerhouse compensation structure, is what drives UNO Premier to the top of the Elite and separates itself from the common traditional network marketing programs seen today. UNO Premier is poised as the next big International giant to create the next wave of millionaires.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -396,29 +262,31 @@ Distributors whose account are dormant or inactive for more then one (1) year ar
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission &amp; Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-ao-vZr">
                                         <rect key="frame" x="84" y="74" width="127" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bof-Ed-wEp">
-                                        <rect key="frame" x="20" y="145" width="122" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Mission" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mF-gA-D0T">
-                                        <rect key="frame" x="20" y="350" width="122" height="21"/>
+                                        <rect key="frame" x="8" y="333" width="122" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="363" translatesAutoresizingMaskIntoConstraints="NO" id="2kB-FQ-olV">
-                                        <rect key="frame" x="28" y="136" width="363" height="123"/>
-                                        <string key="text">To be the # 1 network marketing opportunity in 
-the world..</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px8-ty-yfE">
+                                        <rect key="frame" x="8" y="163" width="304" height="179"/>
+                                        <string key="text">The Company's objective is to be the world's leading opportunity wealth network provider. In this tough industry we will set a new pace in helping people achieve their goals and dreams. We will change the lives of thousands and bring people a peace of mind. We will become the #1 Network Marketing Company globally changing lives, creating time freedom, and the next wave of millionaires.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To provide the best products  and services, to produce more successful entrepreneurs." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="326" translatesAutoresizingMaskIntoConstraints="NO" id="4Xw-sC-aBV">
-                                        <rect key="frame" x="28" y="363" width="326" height="101"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bof-Ed-wEp">
+                                        <rect key="frame" x="8" y="147" width="122" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="headTruncation" numberOfLines="100" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vX-aw-TUi">
+                                        <rect key="frame" x="8" y="318" width="304" height="173"/>
+                                        <string key="text">It’s not what is seen now, but what we foreseen soon to come to pass, a company of greatness, who has touch the countless lives thru our genuine Love, Integrity, Leadership, Determination and Perseverance of the many challenges up ahead.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -508,11 +376,11 @@ the world..</string>
             </objects>
             <point key="canvasLocation" x="-1637" y="-1638"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Videos-->
         <scene sceneID="YkQ-s6-8Cr">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="rvR-7t-7UW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="tU6-8d-qCp"/>
+                    <tabBarItem key="tabBarItem" title="Videos" image="tab_videos.png" id="tU6-8d-qCp"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7NC-Kb-zvh">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -571,141 +439,46 @@ the world..</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vne-1v-BBh">
-                                <rect key="frame" x="43" y="71" width="105" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_foodsupplement.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Food Supplement">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="btnFoodSupplement:" destination="QUy-BD-bpt" eventType="touchUpInside" id="hji-Pb-eS5"/>
-                                    <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="R56-1f-gBv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1GW-fC-D92">
-                                <rect key="frame" x="189" y="71" width="89" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_healthydrinks.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Healthy Drinks">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="btnHealthyDrinks:" destination="QUy-BD-bpt" eventType="touchUpInside" id="vA1-cx-qLD"/>
-                                    <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="lxc-WR-hyU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="igj-1k-xLC">
-                                <rect key="frame" x="43" y="178" width="105" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_beautyproducts.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Beauty Products">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="btnBeautyProducts:" destination="QUy-BD-bpt" eventType="touchUpInside" id="H7r-g4-Oui"/>
-                                    <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="Eum-gg-eBM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wwk-Jt-d8f">
-                                <rect key="frame" x="189" y="178" width="89" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_peoplecare.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Personal Care">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="c1o-xj-rPN"/>
-                                    <action selector="btnPersonalCare:" destination="QUy-BD-bpt" eventType="touchUpInside" id="J78-bk-nkK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tux-bF-dgO">
-                                <rect key="frame" x="43" y="295" width="120" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-44" minY="52" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="31" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_householdproducts.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Household Products">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="btnHouseholdProducts:" destination="QUy-BD-bpt" eventType="touchUpInside" id="caf-WK-Fd1"/>
-                                    <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="7Iy-8O-ao2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7gy-l3-cr5">
-                                <rect key="frame" x="189" y="295" width="89" height="83"/>
-                                <inset key="titleEdgeInsets" minX="-40" minY="51" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="30"/>
-                                <size key="titleShadowOffset" width="9" height="11"/>
-                                <state key="normal" image="ic_breakthru.png">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Breakthrough">
-                                            <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="btnBreakthrough:" destination="QUy-BD-bpt" eventType="touchUpInside" id="34f-Zb-Vc8"/>
-                                    <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="5eD-Sh-9w9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSx-nr-DG6">
-                                <rect key="frame" x="67" y="442" width="186" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title=" watch product avp" image="playbutton_small.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D9s-SE-tZ8">
+                                <rect key="frame" x="-91" y="66" width="233" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="83" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="-92" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="18" minY="4" maxX="0.0" maxY="14"/>
+                                <state key="normal" title="Nutrifab" image="Nutrifab.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnWatchAVP:" destination="QUy-BD-bpt" eventType="touchUpInside" id="Hcl-rP-ybu"/>
+                                    <action selector="btnNutrifab:" destination="QUy-BD-bpt" eventType="touchUpInside" id="iiE-Ke-oJv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="r77-Qg-nRO">
+                                <rect key="frame" x="150" y="66" width="241" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="-118" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
+                                <state key="normal" title="Sante8Berries" image="sante8berries.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSanteBerries:" destination="QUy-BD-bpt" eventType="touchUpInside" id="sMm-IM-XtK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZYx-Fp-e6K">
+                                <rect key="frame" x="-91" y="257" width="233" height="150"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="81" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="-97" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="14"/>
+                                <state key="normal" title="Procardio" image="procardio.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnProcardio:" destination="QUy-BD-bpt" eventType="touchUpInside" id="XIv-bj-yDd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -716,17 +489,12 @@ the world..</string>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="ufF-Lm-lld" kind="modal" identifier="gotoHouseholdProducts" id="Tjg-tJ-LRy"/>
-                        <segue destination="84z-1V-G3H" kind="modal" identifier="gotoHealthyDrinks" id="LXg-92-LKy"/>
-                        <segue destination="1zG-z8-xTt" kind="modal" identifier="gotoBeautyProducts" id="bLs-X3-CjF"/>
-                        <segue destination="cU4-p1-W7F" kind="modal" identifier="gotoBreakthrough" id="cVH-ib-ljm"/>
-                        <segue destination="yvW-n6-jsU" kind="modal" identifier="gotoFoodSupplement" id="UJ3-Kp-98Y"/>
-                        <segue destination="zA9-K0-mn5" kind="modal" identifier="gotoPersonalCare" id="L3o-RG-qLu"/>
+                        <segue destination="KPe-Vq-rV4" kind="push" identifier="gotoNutrifab" id="xZG-bO-5zK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4819" y="-950"/>
+            <point key="canvasLocation" x="-4827" y="-950"/>
         </scene>
         <!--Ten Ways1 View Controller-->
         <scene sceneID="Tbb-Pb-QUX">
@@ -804,7 +572,7 @@ the world..</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0p2-8o-f5d">
-                                <rect key="frame" x="5" y="81" width="310" height="405"/>
+                                <rect key="frame" x="5" y="66" width="310" height="405"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -829,41 +597,48 @@ the world..</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0de-M6-bzT">
-                                <rect key="frame" x="54" y="103" width="212" height="69"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="10 Ways Philippines" image="ic_aboutus.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="local:" destination="erF-xz-glj" eventType="touchUpInside" id="Hqd-S7-y4D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DLd-gN-LsO">
-                                <rect key="frame" x="59" y="198" width="212" height="69"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="10 Ways International" image="ic_aboutus.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="intl:" destination="erF-xz-glj" eventType="touchUpInside" id="j2L-wy-KAY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qz-9S-LBI">
-                                <rect key="frame" x="39" y="302" width="243" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title=" Download Marketing Plan" image="downloadicon.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="marketingPlan:" destination="erF-xz-glj" eventType="touchUpInside" id="oy9-Vu-aEF"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8OX-9V-UUh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ten Ways to Earn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1g-tA-gbZ">
+                                        <rect key="frame" x="0.0" y="95" width="320" height="21"/>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.28627450980000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoI-5l-kTT" userLabel="Button1">
+                                        <rect key="frame" x="58" y="143" width="84" height="99"/>
+                                        <state key="normal" image="buttonView.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="local:" destination="erF-xz-glj" eventType="touchUpInside" id="DgN-WC-Yl5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ald-mO-C9R" userLabel="Button2">
+                                        <rect key="frame" x="176" y="143" width="84" height="99"/>
+                                        <state key="normal" image="buttonDownload.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="downloadPlan:" destination="erF-xz-glj" eventType="touchUpInside" id="agU-1O-Byk"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgw-09-t8C">
+                                        <rect key="frame" x="0.0" y="383" width="320" height="10"/>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.28627450980000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.5499999999999996" height="0.49999999999999961"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="5"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="jsr-HL-pVC">
+                                        <rect key="frame" x="40" y="21" width="240" height="66"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1025,13 +800,10 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="6Dg-VI-iod"/>
-                    <connections>
-                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="Uoo-rp-emQ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ON6-im-c0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4240" y="149"/>
+            <point key="canvasLocation" x="-3176" y="149"/>
         </scene>
         <!--Food Supplement Table View Controller-->
         <scene sceneID="4MU-5C-1sf">
@@ -1057,13 +829,10 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="sx8-4P-jp0"/>
-                    <connections>
-                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="D4x-GD-ECa"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPf-08-wmw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3432" y="149"/>
+            <point key="canvasLocation" x="-2368" y="149"/>
         </scene>
         <!--Break Through Table View Controller-->
         <scene sceneID="ICY-hF-3aa">
@@ -1089,13 +858,10 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Ry5-Sq-nC0"/>
-                    <connections>
-                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="ZRK-fr-azQ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7g-fW-VD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2377" y="149"/>
+            <point key="canvasLocation" x="-1313" y="149"/>
         </scene>
         <!--Household Table View Controller-->
         <scene sceneID="9zz-sw-pyX">
@@ -1121,13 +887,10 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xBV-JS-CHj"/>
-                    <connections>
-                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="ntj-ga-jt0"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjM-AX-Z4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3866" y="-543"/>
+            <point key="canvasLocation" x="-3334" y="-543"/>
         </scene>
         <!--Healthy Drinks Table View Controller-->
         <scene sceneID="OPn-FS-b14">
@@ -1154,13 +917,10 @@ the world..</string>
                     </tableView>
                     <navigationItem key="navigationItem" id="Xoc-UC-TIw"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <connections>
-                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="tva-zy-661"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5MQ-e9-6FI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3085" y="-543"/>
+            <point key="canvasLocation" x="-2553" y="-543"/>
         </scene>
         <!--Beauty Products Table View Controller-->
         <scene sceneID="Eb6-QS-jCZ">
@@ -1186,13 +946,10 @@ the world..</string>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Rpt-1u-qrP"/>
-                    <connections>
-                        <segue destination="KPe-Vq-rV4" kind="push" identifier="pushProducts" id="cvY-NK-O6B"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9C-yH-f7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2279" y="-543"/>
+            <point key="canvasLocation" x="-1747" y="-543"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="sGU-ZX-S6s">
@@ -1207,34 +964,40 @@ the world..</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-y8-a8a">
-                                <rect key="frame" x="0.0" y="428" width="99" height="35"/>
+                                <rect key="frame" x="0.0" y="394" width="99" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" Product" image="playbutton_small.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="productsBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="6HL-ff-vku"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DZ-f0-pUZ">
-                                <rect key="frame" x="186" y="428" width="126" height="35"/>
+                                <rect key="frame" x="186" y="394" width="126" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" Testimonial" image="playbutton_small.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="testiBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="PzK-Zw-pLK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAI-JH-bZ0">
-                                <rect key="frame" x="96" y="428" width="100" height="35"/>
+                                <rect key="frame" x="96" y="394" width="100" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title=" Science" image="playbutton_small.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sciBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="qEE-nb-TEy"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bL-vn-hBP">
-                                <rect key="frame" x="21" y="64" width="268" height="146"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyB-DB-Nhb">
-                                <rect key="frame" x="0.0" y="206" width="320" height="220"/>
+                                <rect key="frame" x="0.0" y="166" width="320" height="220"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Lorem ipsum dolor sit er ">
@@ -1260,6 +1023,9 @@ the world..</string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bL-vn-hBP">
+                                <rect key="frame" x="26" y="20" width="268" height="146"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1268,11 +1034,12 @@ the world..</string>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="productDesc" destination="vyB-DB-Nhb" id="IYr-ST-qII"/>
+                        <outlet property="productImage" destination="5bL-vn-hBP" id="0bn-MS-iUn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWH-2s-woE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1772" y="-452"/>
+            <point key="canvasLocation" x="-5019" y="-229"/>
         </scene>
         <!--Product Packages-->
         <scene sceneID="MiM-m8-00O">
@@ -1326,7 +1093,7 @@ the world..</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DML-JF-xh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4240" y="-543"/>
+            <point key="canvasLocation" x="-3708" y="-543"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5rz-MI-qWF">
@@ -1345,7 +1112,7 @@ the world..</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NoO-gt-Lme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3464" y="-543"/>
+            <point key="canvasLocation" x="-2932" y="-543"/>
         </scene>
         <!--Our Company-->
         <scene sceneID="QaO-tc-KuW">
@@ -1423,7 +1190,7 @@ the world..</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="435"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_name.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Gi-dc-AvL">
-                                <rect key="frame" x="91" y="181" width="139" height="63"/>
+                                <rect key="frame" x="-85" y="83" width="491" height="270"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1432,7 +1199,7 @@ the world..</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4J-Nb-o26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6491" y="-2298"/>
+            <point key="canvasLocation" x="-6843" y="-2505"/>
         </scene>
         <!--Packages-->
         <scene sceneID="GG1-wy-88v">
@@ -1470,7 +1237,7 @@ the world..</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdY-b2-xhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2669" y="-543"/>
+            <point key="canvasLocation" x="-2137" y="-543"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hG4-hE-8FK">
@@ -1488,7 +1255,7 @@ the world..</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqh-BA-Kpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2752" y="149"/>
+            <point key="canvasLocation" x="-1688" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DdD-bx-7z6">
@@ -1506,7 +1273,7 @@ the world..</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1l-Mf-HKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3818" y="149"/>
+            <point key="canvasLocation" x="-2754" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QnC-FQ-zoS">
@@ -1524,7 +1291,7 @@ the world..</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDn-Fd-JLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4602" y="149"/>
+            <point key="canvasLocation" x="-3538" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="doU-O8-vIk">
@@ -1699,7 +1466,14 @@ the world..</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Nutrifab.png" width="150" height="150"/>
         <image name="bgport.jpg" width="600" height="862"/>
+        <image name="button1.png" width="168" height="198"/>
+        <image name="button2.png" width="168" height="198"/>
+        <image name="button3.png" width="168" height="198"/>
+        <image name="button4.png" width="168" height="198"/>
+        <image name="buttonDownload.png" width="168" height="198"/>
+        <image name="buttonView.png" width="168" height="198"/>
         <image name="certbtn1.png" width="85" height="85"/>
         <image name="certbtn2.png" width="85" height="85"/>
         <image name="certbtn3.png" width="85" height="85"/>
@@ -1712,27 +1486,19 @@ the world..</string>
         <image name="director1.jpg" width="150" height="150"/>
         <image name="director2.jpg" width="150" height="150"/>
         <image name="director3.jpg" width="150" height="150"/>
-        <image name="downloadicon.png" width="35" height="35"/>
         <image name="ic_aboutus.png" width="50" height="50"/>
-        <image name="ic_beautyproducts.png" width="50" height="50"/>
-        <image name="ic_breakthru.png" width="50" height="50"/>
-        <image name="ic_certificates.png" width="50" height="50"/>
-        <image name="ic_conduct.png" width="50" height="50"/>
-        <image name="ic_directors.png" width="50" height="50"/>
-        <image name="ic_foodsupplement.png" width="50" height="50"/>
-        <image name="ic_healthydrinks.png" width="50" height="50"/>
-        <image name="ic_householdproducts.png" width="50" height="50"/>
-        <image name="ic_mission.png" width="50" height="50"/>
-        <image name="ic_peoplecare.png" width="50" height="50"/>
         <image name="ic_prod_packages.png" width="50" height="50"/>
         <image name="ic_tenways.png" width="50" height="50"/>
         <image name="playbutton_small.png" width="35" height="35"/>
+        <image name="procardio.png" width="150" height="150"/>
+        <image name="sante8berries.png" width="150" height="150"/>
         <image name="tab_10ways.png" width="32" height="32"/>
         <image name="tab_company.png" width="32" height="32"/>
         <image name="tab_home.png" width="32" height="32"/>
         <image name="tab_prod_packages.png" width="32" height="32"/>
         <image name="tab_products.png" width="32" height="32"/>
         <image name="tab_videos.png" width="32" height="32"/>
+        <image name="uno_home_black.png" width="270" height="270"/>
         <image name="uno_home_name.png" width="491" height="270"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1740,7 +1506,4 @@ the world..</string>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="ntj-ga-jt0"/>
-    </inferredMetricsTieBreakers>
 </document>

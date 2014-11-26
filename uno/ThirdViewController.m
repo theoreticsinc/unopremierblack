@@ -37,8 +37,8 @@
     [self performSegueWithIdentifier:@"gotoLocal" sender:self];
 }
 
-- (IBAction)marketingPlan:(id)sender {
-    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://uno-corp.com/home/homepage/registered/marketing-plan-main-page" ];
+- (IBAction)downloadPlan:(id)sender {
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"http://unopremier.com/compensation/ten-ways-to-earn" ];
     
     [[UIApplication sharedApplication] openURL:url];
 }

@@ -17,11 +17,13 @@
 @synthesize productImage;
 @synthesize productDesc;
 @synthesize youtube_link;
+@synthesize science_link;
+@synthesize testimonial_link;
 
 - (void)viewDidLoad {
     NSString *imageFilename = [NSString stringWithFormat:@"%@", imageFile];
 
-    NSLog(@"RECIPE: %@ and %@", recipeName, imageFilename);
+    //NSLog(@"RECIPE: %@ and %@", recipeName, imageFilename);
     UIImage *image = [[UIImage alloc] init];
     image = [UIImage imageNamed:imageFilename];
                       //initWithImage:[UIImage imageNamed:imageFilename]];
@@ -52,8 +54,23 @@
 */
 
 - (IBAction)productsBtn:(id)sender {
-    NSURL *url = [ [ NSURL alloc ] initWithString: youtube_link ];
+    NSString *prodlink = [[NSString alloc] initWithFormat:@"https://www.youtube.com/watch?v=%@",youtube_link];
     
+    NSURL *url = [ [ NSURL alloc ] initWithString: prodlink ];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
+- (IBAction)sciBtn:(id)sender {
+    NSString *prodlink = [[NSString alloc] initWithFormat:@"https://www.youtube.com/watch?v=%@",science_link];
+    
+    NSURL *url = [ [ NSURL alloc ] initWithString: prodlink ];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
+- (IBAction)testiBtn:(id)sender {
+    NSString *prodlink = [[NSString alloc] initWithFormat:@"https://www.youtube.com/watch?v=%@",testimonial_link];
+    //NSLog(@"testimonial_link=%@",testimonial_link);
+    NSURL *url = [ [ NSURL alloc ] initWithString: prodlink ];
     [[UIApplication sharedApplication] openURL:url];
 }
 

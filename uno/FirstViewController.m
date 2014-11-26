@@ -30,6 +30,7 @@
 
 
 - (IBAction)btnAbtUs:(id)sender {
+    self.navigationItem.title = @"About UNO Premier";
     [self performSegueWithIdentifier:@"gotoAbtUs" sender:self];
 }
 
@@ -38,10 +39,12 @@
 }
 
 - (IBAction)btnMissionVision:(id)sender {
+    self.navigationItem.title = @"Mission Vision";
     [self performSegueWithIdentifier:@"gotoMissionVision" sender:self];
 }
 
 - (IBAction)btnCodeConduct:(id)sender {
+    self.navigationItem.title = @"Compensation";
     [self performSegueWithIdentifier:@"gotoCodeConduct" sender:self];
 }
 
