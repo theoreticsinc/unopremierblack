@@ -74,4 +74,8 @@
     [[UIApplication sharedApplication] openURL:url];
 }
 
+- (IBAction) Back {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

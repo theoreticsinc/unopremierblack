@@ -23,9 +23,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    products = [NSArray arrayWithObjects:@"Nutrifab", @"Procardio", @"Sante8Berries", nil];
-    productsIcons = [NSArray arrayWithObjects:@"Nutrifab.png", @"procardio.png", @"sante8berries.png", nil];
-    productsImages = [NSArray arrayWithObjects:@"prod_nutrifab.jpg", @"prod_procardio.jpg", @"prod_sante8berries.jpg", nil];
+    products = [NSArray arrayWithObjects:@"Nutrifab", @"Procardio", @"Sante8Berries", @"LeJeune", nil];
+    productsIcons = [NSArray arrayWithObjects:@"Nutrifab.png", @"procardio.png", @"sante8berries.png", @"lejeune.png", nil];
+    productsImages = [NSArray arrayWithObjects:@"prod_nutrifab.jpg", @"prod_procardio.jpg", @"prod_sante8berries.jpg", @"prod_lejeune.jpg", nil];
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"unopremierBG.jpg"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
 }
 
@@ -37,42 +43,24 @@
 
 - (IBAction)btnNutrifab:(id)sender {
     btnType = @"gotoNutrifab";
-    [self performSegueWithIdentifier:@"gotoNutrifab" sender:self];
+    [self performSegueWithIdentifier:@"gotoProductDetails" sender:self];
 }
 
 - (IBAction)btnProcardio:(id)sender {
     btnType = @"gotoProcardio";
-    [self performSegueWithIdentifier:@"gotoNutrifab" sender:self];
+    [self performSegueWithIdentifier:@"gotoProductDetails" sender:self];
 }
 
 - (IBAction)btnSanteBerries:(id)sender {
     btnType = @"gotoSanteBerries";
-    [self performSegueWithIdentifier:@"gotoNutrifab" sender:self];
+    [self performSegueWithIdentifier:@"gotoProductDetails" sender:self];
 }
 
-- (IBAction)btnFoodSupplement:(id)sender {
-    [self performSegueWithIdentifier:@"gotoFoodSupplement" sender:self];
+- (IBAction)btnLeJeune:(id)sender {
+    btnType = @"gotoLeJeune";
+    [self performSegueWithIdentifier:@"gotoProductDetails" sender:self];
 }
 
-- (IBAction)btnHealthyDrinks:(id)sender {
-    [self performSegueWithIdentifier:@"gotoHealthyDrinks" sender:self];
-}
-
-- (IBAction)btnBeautyProducts:(id)sender {
-    [self performSegueWithIdentifier:@"gotoBeautyProducts" sender:self];
-}
-
-- (IBAction)btnPersonalCare:(id)sender {
-    [self performSegueWithIdentifier:@"gotoPersonalCare" sender:self];
-}
-
-- (IBAction)btnHouseholdProducts:(id)sender {
-    [self performSegueWithIdentifier:@"gotoHouseholdProducts" sender:self];
-}
-
-- (IBAction)btnBreakthrough:(id)sender {
-    [self performSegueWithIdentifier:@"gotoBreakthrough" sender:self];
-}
 
 - (IBAction)btnWatchAVP:(id)sender {
     NSURL *url = [ [ NSURL alloc ] initWithString: @"https://www.youtube.com/watch?v=WEJigpOFlGE" ];
@@ -126,6 +114,21 @@
         destViewController.testimonial_link = NSLocalizedString(testilink, nil);
         NSLog(@"YOUTUBE%@", [productsImages objectAtIndex:2]);
         destViewController.imageFile = [productsImages objectAtIndex:2];
+    }
+    else if ([btnType isEqualToString:@"gotoLeJeune"]) {
+        NSString *youtubelink = [NSString stringWithFormat:@"youtube_%@", [products objectAtIndex:3]];
+        NSString *scilink = [NSString stringWithFormat:@"science_%@", [products objectAtIndex:3]];
+        NSString *testilink = [NSString stringWithFormat:@"testi_%@", [products objectAtIndex:3]];
+        NSString *desclink = [NSString stringWithFormat:@"desc_%@", [products objectAtIndex:3]];
+        
+        DetailsViewController *destViewController = segue.destinationViewController;
+        
+        destViewController.recipeName = NSLocalizedString(desclink, nil);
+        destViewController.youtube_link = NSLocalizedString(youtubelink, nil);
+        destViewController.science_link = NSLocalizedString(scilink, nil);
+        destViewController.testimonial_link = NSLocalizedString(testilink, nil);
+        NSLog(@"YOUTUBE%@", [productsImages objectAtIndex:3]);
+        destViewController.imageFile = [productsImages objectAtIndex:3];
     }
 }
 

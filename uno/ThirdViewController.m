@@ -34,7 +34,7 @@
 }
 
 - (IBAction)local:(id)sender {
-    [self performSegueWithIdentifier:@"gotoLocal" sender:self];
+    [self performSegueWithIdentifier:@"goto2Ways" sender:self];
 }
 
 - (IBAction)downloadPlan:(id)sender {

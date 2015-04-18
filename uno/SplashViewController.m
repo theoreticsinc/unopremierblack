@@ -33,8 +33,8 @@
 - (void)viewDidLoad
 {
     NSLog(@"Splash loaded");
-    /*NSURL *url2 = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                         pathForResource:@"unosplash" ofType:@"mp4"]];
+    NSURL *url2 = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                          pathForResource:@"unopremier_orig" ofType:@"mp4"]];
     MPMoviePlayerViewController *playercontroller = [[MPMoviePlayerViewController alloc]
                                                      initWithContentURL:url2];
     [self presentMoviePlayerViewControllerAnimated:playercontroller];
@@ -43,9 +43,8 @@
     playercontroller.moviePlayer.controlStyle = MPMovieControlStyleNone;
     [playercontroller.moviePlayer play];
     [[NSNotificationCenter defaultCenter]        addObserver:self           selector:@selector(movieFinishedCallback:)               name:MPMoviePlayerPlaybackDidFinishNotification             object:[playercontroller moviePlayer]];
-    */
+    
     [super viewDidLoad];
-    [self performSegueWithIdentifier:@"afterSplash" sender:self];
     // Do any additional setup after loading the view.
     
 }
