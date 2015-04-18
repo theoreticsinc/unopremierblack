@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SDO-4B-znz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SDO-4B-znz">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -17,7 +17,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Bs5-Le-Jcx" kind="relationship" relationship="viewControllers" id="ftc-13-Ag7"/>
+                        <segue destination="Jnr-D1-9zl" kind="relationship" relationship="viewControllers" id="ftc-13-Ag7"/>
                         <segue destination="eyN-w8-MGC" kind="relationship" relationship="viewControllers" id="IIk-SZ-aeL"/>
                         <segue destination="sLC-BG-th1" kind="relationship" relationship="viewControllers" id="uXm-4y-jjh"/>
                         <segue destination="8ap-sF-2WE" kind="relationship" relationship="viewControllers" id="foL-zf-cfI"/>
@@ -39,15 +39,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About UNO Premier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ab-NQ-TSU">
-                                <rect key="frame" x="0.0" y="95" width="320" height="21"/>
-                                <color key="backgroundColor" red="0.31372549019607843" green="0.28627450980392155" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aboutBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-QX-VfZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4d-ak-eYc" userLabel="Button1">
-                                <rect key="frame" x="58" y="143" width="84" height="99"/>
+                                <rect key="frame" x="59" y="183" width="84" height="99"/>
                                 <state key="normal" image="button1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -56,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jum-om-KOx" userLabel="Button2">
-                                <rect key="frame" x="176" y="143" width="84" height="99"/>
+                                <rect key="frame" x="177" y="183" width="84" height="99"/>
                                 <state key="normal" image="button2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -65,28 +61,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsG-eV-SQ4" userLabel="Button4">
-                                <rect key="frame" x="58" y="262" width="84" height="99"/>
-                                <state key="normal" image="button4.png">
+                                <rect key="frame" x="177" y="297" width="84" height="99"/>
+                                <state key="normal" image="button3.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="btnMissionVision:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="F2D-4j-uGH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvM-wg-TB7">
-                                <rect key="frame" x="0.0" y="383" width="320" height="10"/>
-                                <color key="backgroundColor" red="0.31372549020000001" green="0.28627450980000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.5499999999999996" height="0.49999999999999961"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="5"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="qHv-t6-EJo">
-                                <rect key="frame" x="40" y="21" width="240" height="66"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm3-Mv-oah" userLabel="Button3">
-                                <rect key="frame" x="176" y="262" width="84" height="99"/>
-                                <state key="normal" image="button3.png">
+                                <rect key="frame" x="59" y="297" width="84" height="99"/>
+                                <state key="normal" image="button4.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -102,14 +87,13 @@
                     <connections>
                         <segue destination="MtS-Xl-4DU" kind="modal" identifier="gotoBoardDirectors" id="dGK-dF-Ah4"/>
                         <segue destination="hly-XH-s26" kind="modal" identifier="gotoCodeConduct" id="VJy-P8-2p6"/>
-                        <segue destination="5zM-gp-V32" kind="modal" identifier="gotoCertificates" id="KnY-kf-mWr"/>
                         <segue destination="rdb-KC-DIY" kind="modal" identifier="gotoAbtUs" id="AT3-cc-0bP"/>
                         <segue destination="2Hk-kh-7aA" kind="modal" identifier="gotoMissionVision" id="oxn-hm-3UJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4849" y="-1693"/>
+            <point key="canvasLocation" x="-4553" y="-1622"/>
         </scene>
         <!--AboutUs-->
         <scene sceneID="PvD-Pk-RTb">
@@ -123,23 +107,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="GC8-Yt-9fb">
-                                <rect key="frame" x="13" y="61" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgVer2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7cg-JM-4b4">
+                                <rect key="frame" x="0.0" y="46" width="320" height="522"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UNO Premier" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bx-F1-QDT">
-                                <rect key="frame" x="71" y="75" width="138" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="GC8-Yt-9fb">
+                                <rect key="frame" x="10" y="62" width="50" height="50"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bx-F1-QDT">
+                                <rect key="frame" x="68" y="76" width="138" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jha-VZ-YhT">
-                                <rect key="frame" x="16" y="112" width="288" height="371"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="120" width="288" height="374"/>
                                 <string key="text">UNO Premier is a dynamic marketing company that was derived from the foundation of a very long history of Leadership, Management and Entrepreneurism. UNO Premier’s Mother Company UNO started its rising 8 years ago and blossomed throughout the network marketing Industry like rapid fire and became a network marketing sensation and has created over 800 Philippine millionaires over the short span of 8 years which in itself is a natural phenomenon and today has over 100 offices spread out nationwide throughout the Philippines. 
 
 From the foundation of UNO comes the birth of UNO Premier. UNO Premier was specifically designed to penetrate the International Market and cater to a more refine class of mentality of high end professionals and entrepreneurs which categorically fall under what is known as the A, B and Upper C Markets among businessman and woman and likeminded professionals.
 
 Its vision from a business stand point from Products, Services, Marketing, Management and a powerhouse Compensation structure is what drives UNO Premier to the top of the Elite and separates itself from the common traditional Network marketing programs you see today. Uno Premier is poised as the next big International giant to create the next wave of millionaires.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -151,7 +138,7 @@ Its vision from a business stand point from Products, Services, Marketing, Manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr0-cB-I7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3478" y="-2042"/>
+            <point key="canvasLocation" x="-1309" y="-2042"/>
         </scene>
         <!--BoardDirector-->
         <scene sceneID="J99-FU-2k7">
@@ -168,14 +155,17 @@ Its vision from a business stand point from Products, Services, Marketing, Manag
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqv-kj-iEv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ne2-B9-lZR">
-                                        <rect key="frame" x="100" y="75" width="120" height="115"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blankBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QIJ-nb-Z6O">
+                                        <rect key="frame" x="0.0" y="39" width="320" height="529"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="y9E-0r-e0x">
-                                        <rect key="frame" x="100" y="198" width="120" height="115"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1cg-AP-i0C">
+                                        <rect key="frame" x="115" y="174" width="90" height="90"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MCO-Qu-qiA">
-                                        <rect key="frame" x="100" y="321" width="120" height="115"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SNh-YH-MrP">
+                                        <rect key="frame" x="115" y="267" width="90" height="90"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="director3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-OH-nsY">
+                                        <rect key="frame" x="115" y="359" width="90" height="90"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -189,11 +179,11 @@ Its vision from a business stand point from Products, Services, Marketing, Manag
                             <constraint firstAttribute="bottom" secondItem="gqv-kj-iEv" secondAttribute="bottom" id="zJI-n4-nyl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YBy-7T-QGm"/>
+                    <navigationItem key="navigationItem" id="cIa-jR-AOu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIW-zs-qDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3491" y="-1225"/>
+            <point key="canvasLocation" x="-2973" y="-1334"/>
         </scene>
         <!--CodeConduct-->
         <scene sceneID="K5G-oG-a5l">
@@ -207,18 +197,11 @@ Its vision from a business stand point from Products, Services, Marketing, Manag
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Compensation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6e-T3-l2Z">
-                                <rect key="frame" x="62" y="61" width="134" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-A2-R1N">
-                                <rect key="frame" x="6" y="52" width="48" height="43"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgVer2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sor-5K-JuN">
+                                <rect key="frame" x="0.0" y="46" width="320" height="522"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mST-QV-Ti0">
-                                <rect key="frame" x="9" y="96" width="295" height="430"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="9" y="103" width="295" height="382"/>
                                 <string key="text">In designing UNO Premier's compensation plan, William Barbo, Herbie and Oliver Chua continually asked one simple question: "How would we want to be compensated if we were UNO Premier Consultants?” Being former Successful Network Marketers themselves, this gave them the ability to design a compensation plan and set a New Standard in rewarding Marketers and Business Entrepreneurs alike. Thru their combined experience, they set forth to gather the top compensation plans in the industry and carefully studied all the pros and cons, taking the best concepts of each one and formulated a well-balanced hybrid leveraging compensation structure, that is not only incredibly powerful with tremendous leverage, but delivers life changing results at every level of the business – from getting started to building a personal long term empire. 
 When the big 3 were faced with this challenge, they knew that in order to successfully execute this, its design had to be in the right balance,where its payout would be incredibly strong upfront but at the same time without compromising the safety net of the company by over pay.  They wanted to create a compensation structure that would eliminate the high attrition rate and reward the new starting consultants with a sustainable high return and long term residual made it even better. Get ready 2015 because it’s going to be the ride of a lifetime and history is about to repeat itself, but this time exponentially!” drives UNO Premier to the top of the Elite and separates itself from the common traditional network marketing programs seen today. UNO Premier is poised as the next big International giant to create the next wave of millionaires.
 UNO Premier
@@ -229,9 +212,19 @@ NO Premier is a dynamic marketing company that was derived from the foundation o
 From the foundation of UNO comes the birth of UNO Premier. UNO Premier was specifically designed to penetrate the Philippine and International Markets and cater to a more refined class mentality of high end professionals and entrepreneurs which categorically fall under what is known as the A, B and Upper C Markets and likeminded professionals.  
 Its vision from a business stand point from products, services, marketing, management and a powerhouse compensation structure, is what drives UNO Premier to the top of the Elite and separates itself from the common traditional network marketing programs seen today. UNO Premier is poised as the next big International giant to create the next wave of millionaires.
 </string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Compensation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6e-T3-l2Z">
+                                <rect key="frame" x="65" y="75" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-A2-R1N">
+                                <rect key="frame" x="9" y="66" width="48" height="43"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -239,7 +232,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQX-qH-kV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2689" y="-1217"/>
+            <point key="canvasLocation" x="-2145" y="-1204"/>
         </scene>
         <!--MissionVision-->
         <scene sceneID="Ssl-Wl-ttK">
@@ -256,37 +249,42 @@ Its vision from a business stand point from products, services, marketing, manag
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScW-FC-QME">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dsv-1x-xWv">
-                                        <rect key="frame" x="20" y="60" width="50" height="50"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgVer2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OM6-JD-lva">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="522"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission &amp; Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-ao-vZr">
-                                        <rect key="frame" x="84" y="74" width="127" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px8-ty-yfE">
+                                        <rect key="frame" x="8" y="155" width="304" height="179"/>
+                                        <string key="text">The Company's objective is to be the world's leading opportunity wealth network provider. In this tough industry we will set a new pace in helping people achieve their goals and dreams. We will change the lives of thousands and bring people a peace of mind. We will become the #1 Network Marketing Company globally changing lives, creating time freedom, and the next wave of millionaires.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="q2T-x2-O1B">
+                                        <rect key="frame" x="8" y="68" width="50" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission and Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlA-qP-iyk">
+                                        <rect key="frame" x="66" y="82" width="176" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bof-Ed-wEp">
+                                        <rect key="frame" x="8" y="136" width="122" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Mission" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mF-gA-D0T">
                                         <rect key="frame" x="8" y="333" width="122" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="151" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px8-ty-yfE">
-                                        <rect key="frame" x="8" y="163" width="304" height="179"/>
-                                        <string key="text">The Company's objective is to be the world's leading opportunity wealth network provider. In this tough industry we will set a new pace in helping people achieve their goals and dreams. We will change the lives of thousands and bring people a peace of mind. We will become the #1 Network Marketing Company globally changing lives, creating time freedom, and the next wave of millionaires.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Our Vision" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bof-Ed-wEp">
-                                        <rect key="frame" x="8" y="147" width="122" height="21"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="headTruncation" numberOfLines="100" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vX-aw-TUi">
-                                        <rect key="frame" x="8" y="318" width="304" height="173"/>
+                                        <rect key="frame" x="8" y="324" width="304" height="173"/>
                                         <string key="text">It’s not what is seen now, but what we foreseen soon to come to pass, a company of greatness, who has touch the countless lives thru our genuine Love, Integrity, Leadership, Determination and Perseverance of the many challenges up ahead.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -305,76 +303,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEM-01-USl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2689" y="-2042"/>
-        </scene>
-        <!--Certificates-->
-        <scene sceneID="LLV-D7-DZo">
-            <objects>
-                <viewController title="Certificates" id="ftE-5F-dob" customClass="CompanyViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kSg-GA-Q6s"/>
-                        <viewControllerLayoutGuide type="bottom" id="fHx-fp-DPL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xCW-ZZ-Xaf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLt-2q-wfb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jxd-vL-jhu">
-                                        <rect key="frame" x="66" y="112" width="85" height="85"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aVi-hi-GWe">
-                                        <rect key="frame" x="166" y="112" width="85" height="85"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn3.png" translatesAutoresizingMaskIntoConstraints="NO" id="tGM-Zk-k45">
-                                        <rect key="frame" x="66" y="205" width="85" height="85"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn4.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mr7-lQ-wEK">
-                                        <rect key="frame" x="163" y="205" width="90" height="85"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_aboutus.png" translatesAutoresizingMaskIntoConstraints="NO" id="YWS-DE-S4k">
-                                        <rect key="frame" x="20" y="54" width="50" height="50"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn5.png" translatesAutoresizingMaskIntoConstraints="NO" id="sJC-3R-nxg">
-                                        <rect key="frame" x="63" y="298" width="90" height="85"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn6.png" translatesAutoresizingMaskIntoConstraints="NO" id="dfk-uH-T17">
-                                        <rect key="frame" x="159" y="298" width="98" height="85"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn7.png" translatesAutoresizingMaskIntoConstraints="NO" id="dA9-yD-EgZ">
-                                        <rect key="frame" x="53" y="391" width="98" height="85"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn8.png" translatesAutoresizingMaskIntoConstraints="NO" id="nBy-8e-GzO">
-                                        <rect key="frame" x="159" y="391" width="98" height="85"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certbtn9.png" translatesAutoresizingMaskIntoConstraints="NO" id="xlG-tR-8c5">
-                                        <rect key="frame" x="55" y="470" width="98" height="85"/>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Certificates" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMO-xi-BBF">
-                                        <rect key="frame" x="78" y="68" width="93" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="NLt-2q-wfb" secondAttribute="bottom" id="KSr-cw-p2n"/>
-                            <constraint firstItem="NLt-2q-wfb" firstAttribute="top" secondItem="xCW-ZZ-Xaf" secondAttribute="top" id="V9O-XT-9Ok"/>
-                            <constraint firstAttribute="trailing" secondItem="NLt-2q-wfb" secondAttribute="trailing" id="c4f-zS-hF5"/>
-                            <constraint firstItem="NLt-2q-wfb" firstAttribute="leading" secondItem="xCW-ZZ-Xaf" secondAttribute="leading" id="hcO-dS-I6G"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="gSL-kI-2sn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YxV-oi-MGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1637" y="-1638"/>
+            <point key="canvasLocation" x="-561" y="-2042"/>
         </scene>
         <!--Videos-->
         <scene sceneID="YkQ-s6-8Cr">
@@ -439,46 +368,43 @@ Its vision from a business stand point from products, services, marketing, manag
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D9s-SE-tZ8">
-                                <rect key="frame" x="-91" y="66" width="233" height="150"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <inset key="contentEdgeInsets" minX="83" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="titleEdgeInsets" minX="-92" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="18" minY="4" maxX="0.0" maxY="14"/>
-                                <state key="normal" title="Nutrifab" image="Nutrifab.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="productsBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="czQ-eO-dNo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPw-s3-iSu">
+                                <rect key="frame" x="57" y="178" width="88" height="121"/>
+                                <state key="normal" backgroundImage="Nutrifab.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnNutrifab:" destination="QUy-BD-bpt" eventType="touchUpInside" id="iiE-Ke-oJv"/>
+                                    <action selector="btnNutrifab:" destination="QUy-BD-bpt" eventType="touchUpInside" id="Xih-FE-KqZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="r77-Qg-nRO">
-                                <rect key="frame" x="150" y="66" width="241" height="150"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="titleEdgeInsets" minX="-118" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
-                                <state key="normal" title="Sante8Berries" image="sante8berries.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBP-PD-lKH">
+                                <rect key="frame" x="176" y="178" width="88" height="121"/>
+                                <state key="normal" backgroundImage="procardio.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnSanteBerries:" destination="QUy-BD-bpt" eventType="touchUpInside" id="sMm-IM-XtK"/>
+                                    <action selector="btnProcardio:" destination="QUy-BD-bpt" eventType="touchUpInside" id="emh-Dk-nIK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZYx-Fp-e6K">
-                                <rect key="frame" x="-91" y="257" width="233" height="150"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <inset key="contentEdgeInsets" minX="81" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="titleEdgeInsets" minX="-97" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="14"/>
-                                <state key="normal" title="Procardio" image="procardio.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWP-so-fzf">
+                                <rect key="frame" x="57" y="295" width="88" height="121"/>
+                                <state key="normal" backgroundImage="sante8berries.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnProcardio:" destination="QUy-BD-bpt" eventType="touchUpInside" id="XIv-bj-yDd"/>
+                                    <action selector="btnSanteBerries:" destination="QUy-BD-bpt" eventType="touchUpInside" id="FwV-Wf-aue"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPx-if-6kS">
+                                <rect key="frame" x="176" y="295" width="88" height="121"/>
+                                <state key="normal" backgroundImage="lejeune.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLeJeune:" destination="QUy-BD-bpt" eventType="touchUpInside" id="fjJ-gG-dkB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -489,56 +415,12 @@ Its vision from a business stand point from products, services, marketing, manag
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="KPe-Vq-rV4" kind="push" identifier="gotoNutrifab" id="xZG-bO-5zK"/>
+                        <segue destination="KPe-Vq-rV4" kind="push" identifier="gotoProductDetails" id="PRG-UN-LqF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4827" y="-950"/>
-        </scene>
-        <!--Ten Ways1 View Controller-->
-        <scene sceneID="Tbb-Pb-QUX">
-            <objects>
-                <viewController id="jUg-T9-Vb5" customClass="TenWays1ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Q7Q-o1-cH3"/>
-                        <viewControllerLayoutGuide type="bottom" id="rEN-Au-P69"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ogc-He-9Os">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zK-aN-XjS">
-                                <rect key="frame" x="83" y="152" width="40" height="28"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="9ul-CT-1kN" appends="YES" id="atJ-AY-eaB"/>
-                            <outletCollection property="gestureRecognizers" destination="yaY-KS-Pkl" appends="YES" id="CLd-a6-JT9"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" id="qdd-27-Xs3"/>
-                    <connections>
-                        <outlet property="swipe10LeftRecognizer" destination="9ul-CT-1kN" id="QP2-yi-nq8"/>
-                        <outlet property="swipe10RightRecognizer" destination="yaY-KS-Pkl" id="QrL-Mx-2Ij"/>
-                        <outlet property="tapImage" destination="0zK-aN-XjS" id="if2-hz-0pi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hPZ-JB-ZDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="9ul-CT-1kN" userLabel="LeftSwipe Gesture Recognizer">
-                    <connections>
-                        <action selector="showGestureForSwipeLeftRecognizer:" destination="jUg-T9-Vb5" id="0pc-Vf-gCY"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="yaY-KS-Pkl" userLabel="RightSwipe Gesture Recognizer">
-                    <connections>
-                        <action selector="showGestureForSwipeRightRecognizer:" destination="jUg-T9-Vb5" id="sPA-wB-MTg"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-2392" y="-3545"/>
+            <point key="canvasLocation" x="-4886" y="-950"/>
         </scene>
         <!--Local Root View Controller-->
         <scene sceneID="cmu-7i-AGy">
@@ -557,7 +439,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XrM-Nn-5Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3040" y="-2750"/>
+            <point key="canvasLocation" x="-854" y="-2750"/>
         </scene>
         <!--Local Data View Controller-->
         <scene sceneID="lBH-mG-Yey">
@@ -575,15 +457,15 @@ Its vision from a business stand point from products, services, marketing, manag
                                 <rect key="frame" x="5" y="66" width="310" height="405"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="dataImage" destination="0p2-8o-f5d" id="lWm-Mk-Xe3"/>
+                        <outlet property="dataImage" destination="0p2-8o-f5d" id="2ju-bf-s2G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bUo-GQ-Y2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2636" y="-2750"/>
+            <point key="canvasLocation" x="-508" y="-2750"/>
         </scene>
         <!--Ten Ways-->
         <scene sceneID="qj7-nG-dyA">
@@ -600,15 +482,11 @@ Its vision from a business stand point from products, services, marketing, manag
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8OX-9V-UUh">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ten Ways to Earn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1g-tA-gbZ">
-                                        <rect key="frame" x="0.0" y="95" width="320" height="21"/>
-                                        <color key="backgroundColor" red="0.31372549020000001" green="0.28627450980000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tenwaysBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="i3t-C3-wKK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="527"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoI-5l-kTT" userLabel="Button1">
-                                        <rect key="frame" x="58" y="143" width="84" height="99"/>
+                                        <rect key="frame" x="59" y="212" width="84" height="99"/>
                                         <state key="normal" image="buttonView.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -617,7 +495,7 @@ Its vision from a business stand point from products, services, marketing, manag
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ald-mO-C9R" userLabel="Button2">
-                                        <rect key="frame" x="176" y="143" width="84" height="99"/>
+                                        <rect key="frame" x="177" y="212" width="84" height="99"/>
                                         <state key="normal" image="buttonDownload.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -625,17 +503,6 @@ Its vision from a business stand point from products, services, marketing, manag
                                             <action selector="downloadPlan:" destination="erF-xz-glj" eventType="touchUpInside" id="agU-1O-Byk"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgw-09-t8C">
-                                        <rect key="frame" x="0.0" y="383" width="320" height="10"/>
-                                        <color key="backgroundColor" red="0.31372549020000001" green="0.28627450980000002" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.5499999999999996" height="0.49999999999999961"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="5"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="jsr-HL-pVC">
-                                        <rect key="frame" x="40" y="21" width="240" height="66"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -647,13 +514,12 @@ Its vision from a business stand point from products, services, marketing, manag
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="9WX-me-V7m" kind="modal" identifier="gotoLocal" id="XzS-vH-UCJ"/>
-                        <segue destination="cBA-B4-hbZ" kind="modal" identifier="gotoIntl" id="pja-Sj-2Sv"/>
+                        <segue destination="a4n-qW-S3s" kind="push" identifier="goto2Ways" id="wRq-C4-I18"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkL-mJ-YL1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4293" y="-2330"/>
+            <point key="canvasLocation" x="-2303" y="-2330"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="r3o-8G-5Z5">
@@ -667,14 +533,14 @@ Its vision from a business stand point from products, services, marketing, manag
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_name.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ti-3W-cLJ">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-Y2-IE1">
                                 <rect key="frame" x="40" y="356" width="240" height="128"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_name.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ti-3W-cLJ">
+                                <rect key="frame" x="40" y="168" width="240" height="128"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="VtE-MZ-Nnh" appends="YES" id="X86-2i-itc"/>
                             <outletCollection property="gestureRecognizers" destination="xb7-66-2hN" appends="YES" id="VmI-03-dpZ"/>
@@ -714,7 +580,7 @@ Its vision from a business stand point from products, services, marketing, manag
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-6376" y="-1622"/>
+            <point key="canvasLocation" x="-6376" y="-1611"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Alj-yR-T4y">
@@ -733,48 +599,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esM-DP-1et" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6819" y="-1622"/>
-        </scene>
-        <!--Videos-->
-        <scene sceneID="6zj-OS-6cU">
-            <objects>
-                <viewController title="Videos" id="4AL-Mi-LvW" customClass="FifthViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WOT-TZ-QME"/>
-                        <viewControllerLayoutGuide type="bottom" id="ayt-H2-R26"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="e7D-X0-vC4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyT-sL-wtl">
-                                <rect key="frame" x="0.0" y="56" width="300" height="233"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_tenways.png" translatesAutoresizingMaskIntoConstraints="NO" id="M05-zR-yn4">
-                                <rect key="frame" x="20" y="100" width="50" height="50"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwt-nK-jSb">
-                                <rect key="frame" x="20" y="179" width="46" height="30"/>
-                                <state key="normal" title="Video">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Videos" image="tab_videos.png" id="GtW-Wp-NaQ"/>
-                    <toolbarItems>
-                        <barButtonItem title="Videos" id="taz-vW-N6R"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" id="3CI-TL-hHS"/>
-                    <connections>
-                        <outlet property="Webview" destination="NyT-sL-wtl" id="D36-sz-7mP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lVG-fb-3qd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5933" y="125"/>
+            <point key="canvasLocation" x="-6819" y="-1611"/>
         </scene>
         <!--Personal Care Table View Controller-->
         <scene sceneID="uaQ-pm-MJg">
@@ -803,7 +628,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ON6-im-c0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3176" y="149"/>
+            <point key="canvasLocation" x="-2644" y="149"/>
         </scene>
         <!--Food Supplement Table View Controller-->
         <scene sceneID="4MU-5C-1sf">
@@ -832,7 +657,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPf-08-wmw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2368" y="149"/>
+            <point key="canvasLocation" x="-1836" y="149"/>
         </scene>
         <!--Break Through Table View Controller-->
         <scene sceneID="ICY-hF-3aa">
@@ -861,7 +686,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7g-fW-VD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1313" y="149"/>
+            <point key="canvasLocation" x="-781" y="149"/>
         </scene>
         <!--Household Table View Controller-->
         <scene sceneID="9zz-sw-pyX">
@@ -890,7 +715,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjM-AX-Z4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3334" y="-543"/>
+            <point key="canvasLocation" x="-2270" y="-543"/>
         </scene>
         <!--Healthy Drinks Table View Controller-->
         <scene sceneID="OPn-FS-b14">
@@ -920,7 +745,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5MQ-e9-6FI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2553" y="-543"/>
+            <point key="canvasLocation" x="-1489" y="-543"/>
         </scene>
         <!--Beauty Products Table View Controller-->
         <scene sceneID="Eb6-QS-jCZ">
@@ -949,7 +774,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9C-yH-f7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1747" y="-543"/>
+            <point key="canvasLocation" x="-683" y="-543"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="sGU-ZX-S6s">
@@ -963,41 +788,14 @@ Its vision from a business stand point from products, services, marketing, manag
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-y8-a8a">
-                                <rect key="frame" x="0.0" y="394" width="99" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title=" Product" image="playbutton_small.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="productsBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="6HL-ff-vku"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DZ-f0-pUZ">
-                                <rect key="frame" x="186" y="394" width="126" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title=" Testimonial" image="playbutton_small.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="testiBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="PzK-Zw-pLK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAI-JH-bZ0">
-                                <rect key="frame" x="96" y="394" width="100" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title=" Science" image="playbutton_small.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="sciBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="qEE-nb-TEy"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyB-DB-Nhb">
-                                <rect key="frame" x="0.0" y="166" width="320" height="220"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgVer2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wrH-Xh-aGO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bL-vn-hBP">
+                                <rect key="frame" x="26" y="52" width="268" height="146"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NH-6p-zpw">
+                                <rect key="frame" x="0.0" y="212" width="320" height="163"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Lorem ipsum dolor sit er ">
@@ -1023,9 +821,39 @@ Its vision from a business stand point from products, services, marketing, manag
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bL-vn-hBP">
-                                <rect key="frame" x="26" y="20" width="268" height="146"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRR-y8-a8a">
+                                <rect key="frame" x="0.0" y="389" width="99" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" Product" image="playbutton_small.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="productsBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="6HL-ff-vku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DZ-f0-pUZ">
+                                <rect key="frame" x="186" y="389" width="126" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" Testimonial" image="playbutton_small.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testiBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="PzK-Zw-pLK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAI-JH-bZ0">
+                                <rect key="frame" x="96" y="389" width="100" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title=" Science" image="playbutton_small.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sciBtn:" destination="KPe-Vq-rV4" eventType="touchUpInside" id="qEE-nb-TEy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1033,48 +861,13 @@ Its vision from a business stand point from products, services, marketing, manag
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
-                        <outlet property="productDesc" destination="vyB-DB-Nhb" id="IYr-ST-qII"/>
+                        <outlet property="productDesc" destination="2NH-6p-zpw" id="95C-w8-rKS"/>
                         <outlet property="productImage" destination="5bL-vn-hBP" id="0bn-MS-iUn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWH-2s-woE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5019" y="-229"/>
-        </scene>
-        <!--Product Packages-->
-        <scene sceneID="MiM-m8-00O">
-            <objects>
-                <viewController title="Product Packages" id="bVJ-R0-k7V" customClass="FourthViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wVd-N7-955"/>
-                        <viewControllerLayoutGuide type="bottom" id="7IQ-qT-jZH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4bD-54-FnP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9IS-pe-4sj">
-                                <rect key="frame" x="30" y="179" width="261" height="112"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title=" Country   Product Packages" image="ic_prod_packages.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnDownload:" destination="bVJ-R0-k7V" eventType="touchUpInside" id="wjD-Lx-wSp"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="bGj-m7-CM0"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c8F-yI-73w" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5367" y="-2330"/>
+            <point key="canvasLocation" x="-4458" y="-950"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yz3-Nd-mZr">
@@ -1093,7 +886,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DML-JF-xh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3708" y="-543"/>
+            <point key="canvasLocation" x="-2644" y="-543"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5rz-MI-qWF">
@@ -1112,7 +905,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NoO-gt-Lme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2932" y="-543"/>
+            <point key="canvasLocation" x="-1868" y="-543"/>
         </scene>
         <!--Our Company-->
         <scene sceneID="QaO-tc-KuW">
@@ -1154,6 +947,110 @@ Its vision from a business stand point from products, services, marketing, manag
             </objects>
             <point key="canvasLocation" x="-5345" y="-950"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="wpB-Da-jlx">
+            <objects>
+                <viewController id="CeC-P8-IMC" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bvu-Nx-fbW"/>
+                        <viewControllerLayoutGuide type="bottom" id="xv2-Iq-ALZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gjN-Uh-5fi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7ET-4Y-zO3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dde-L2-2vF">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMm-u0-A5G">
+                                <rect key="frame" x="65" y="151" width="195" height="30"/>
+                                <state key="normal" backgroundImage="member_login.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="CeC-P8-IMC" eventType="touchUpInside" id="QOf-Ol-B7j"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFP-M8-1lP">
+                                <rect key="frame" x="129" y="101" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgK-xq-Egc">
+                                <rect key="frame" x="27" y="61" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9F-Cv-OLU">
+                                <rect key="frame" x="27" y="105" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-Rt-Iqr">
+                                <rect key="frame" x="129" y="57" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kB-V1-zjK">
+                                <rect key="frame" x="40" y="196" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FFI-u7-uat"/>
+                    <connections>
+                        <outlet property="pword" destination="ZFP-M8-1lP" id="IKk-3s-0Tk"/>
+                        <outlet property="result" destination="dde-L2-2vF" id="bXP-dn-kyW"/>
+                        <outlet property="uname" destination="Lp5-Rt-Iqr" id="Vr6-hL-mc5"/>
+                        <outlet property="wsResults" destination="6kB-V1-zjK" id="UIk-n6-rwW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bu2-UE-EzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4630" y="-2981"/>
+        </scene>
+        <!--You Tube View Controller-->
+        <scene sceneID="6Cb-d3-lRm">
+            <objects>
+                <viewController id="xw3-qv-waR" customClass="YouTubeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qiO-B4-AOe"/>
+                        <viewControllerLayoutGuide type="bottom" id="49t-ES-nOQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nqg-8e-Be1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WG0-BQ-Uxh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMo-qI-rcV">
+                                <rect key="frame" x="9" y="82" width="302" height="283"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vAm-jJ-HfN"/>
+                    <connections>
+                        <outlet property="webview" destination="WMo-qI-rcV" id="Mbl-Ro-rdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGB-cA-mx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4521" y="-2363"/>
+        </scene>
         <!--Ten Ways-->
         <scene sceneID="Mfr-SR-lQd">
             <objects>
@@ -1172,12 +1069,12 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfI-aT-Gc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4819" y="-2330"/>
+            <point key="canvasLocation" x="-2691" y="-2330"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="VSG-6A-UGV">
             <objects>
-                <viewController id="Bs5-Le-Jcx" sceneMemberID="viewController">
+                <viewController id="Bs5-Le-Jcx" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NND-uM-uUU"/>
                         <viewControllerLayoutGuide type="bottom" id="VEh-6l-Wii"/>
@@ -1186,40 +1083,60 @@ Its vision from a business stand point from products, services, marketing, manag
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgport.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="S9M-V3-T53">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="435"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2iE-iq-hab">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_name.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Gi-dc-AvL">
-                                <rect key="frame" x="-85" y="83" width="491" height="270"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szL-wA-qtK">
+                                <rect key="frame" x="7" y="251" width="99" height="80"/>
+                                <state key="normal" backgroundImage="vid_1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnVid1:" destination="Bs5-Le-Jcx" eventType="touchUpInside" id="c19-RF-8Yl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lev-1j-qyN">
+                                <rect key="frame" x="214" y="251" width="99" height="80"/>
+                                <state key="normal" backgroundImage="vid_3.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnVid3:" destination="Bs5-Le-Jcx" eventType="touchUpInside" id="1x8-eU-9PI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odD-KV-kJQ">
+                                <rect key="frame" x="111" y="251" width="99" height="80"/>
+                                <state key="normal" backgroundImage="vid_2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnVid2:" destination="Bs5-Le-Jcx" eventType="touchUpInside" id="fiE-wR-M3y"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uno_home_name.png" translatesAutoresizingMaskIntoConstraints="NO" id="gII-SX-18y">
+                                <rect key="frame" x="66" y="130" width="189" height="100"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6X-ud-FIw">
+                                <rect key="frame" x="63" y="406" width="195" height="30"/>
+                                <state key="normal" backgroundImage="member_login.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogin:" destination="Bs5-Le-Jcx" eventType="touchUpInside" id="May-O4-rY0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="tab_home.png" id="fXa-og-gY8"/>
+                    <navigationItem key="navigationItem" id="G0N-6L-iK1"/>
+                    <connections>
+                        <segue destination="xw3-qv-waR" kind="push" identifier="playVideo" id="sBh-dq-k6K"/>
+                        <segue destination="CeC-P8-IMC" kind="push" identifier="gotoLogin" id="VDj-dT-xXo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4J-Nb-o26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6843" y="-2505"/>
-        </scene>
-        <!--Packages-->
-        <scene sceneID="GG1-wy-88v">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NwI-Tk-aHK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Packages" image="tab_prod_packages.png" id="b4Q-e7-D5F"/>
-                    <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x7e-qW-aae">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="bVJ-R0-k7V" kind="relationship" relationship="rootViewController" id="YRS-bQ-SUk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ltz-gH-Gry" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5893" y="-2330"/>
+            <point key="canvasLocation" x="-5020" y="-2479"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lsv-4B-0Y6">
@@ -1237,7 +1154,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdY-b2-xhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2137" y="-543"/>
+            <point key="canvasLocation" x="-1073" y="-543"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hG4-hE-8FK">
@@ -1255,7 +1172,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqh-BA-Kpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1688" y="149"/>
+            <point key="canvasLocation" x="-1156" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DdD-bx-7z6">
@@ -1273,7 +1190,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1l-Mf-HKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2754" y="149"/>
+            <point key="canvasLocation" x="-2222" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QnC-FQ-zoS">
@@ -1291,7 +1208,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDn-Fd-JLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3538" y="149"/>
+            <point key="canvasLocation" x="-3006" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="doU-O8-vIk">
@@ -1309,7 +1226,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fms-df-Yn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3866" y="-1225"/>
+            <point key="canvasLocation" x="-3334" y="-1225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6dl-8s-PdK">
@@ -1327,25 +1244,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="01t-tE-aWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3085" y="-1225"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EBW-eK-Ei3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5zM-gp-V32" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jh6-uc-Yin">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ftE-5F-dob" kind="relationship" relationship="rootViewController" id="U01-b1-Ze7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hEQ-ZF-lDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2027" y="-1638"/>
+            <point key="canvasLocation" x="-2553" y="-1225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="947-Ya-fb8">
@@ -1363,7 +1262,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sai-Mn-2Vz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3866" y="-2042"/>
+            <point key="canvasLocation" x="-1704" y="-1968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cLo-rC-FG4">
@@ -1381,7 +1280,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hn0-Sf-1zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3085" y="-2042"/>
+            <point key="canvasLocation" x="-957" y="-2042"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Vcg-RV-apo">
@@ -1400,7 +1299,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9s-2A-rqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3388" y="-3589"/>
+            <point key="canvasLocation" x="-1447" y="-3273"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SIc-Hq-gWb">
@@ -1418,7 +1317,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fue-Nb-Dvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3478" y="-2750"/>
+            <point key="canvasLocation" x="-1247" y="-2750"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b6r-Jd-jZ4">
@@ -1436,7 +1335,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvc-JC-fHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3818" y="-3589"/>
+            <point key="canvasLocation" x="-1920" y="-3273"/>
         </scene>
         <!--International-->
         <scene sceneID="fH4-ti-K5U">
@@ -1454,7 +1353,7 @@ Its vision from a business stand point from products, services, marketing, manag
                                 <rect key="frame" x="5" y="59" width="310" height="435"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="dataImage" destination="k0l-EN-m3L" id="o0C-k7-Kam"/>
@@ -1462,44 +1361,117 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2l-ez-hnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3040" y="-3589"/>
+            <point key="canvasLocation" x="-1046" y="-3273"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="dyH-dX-v3m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Jnr-D1-9zl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="tab_home.png" id="fXa-og-gY8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XR4-pz-9BM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bs5-Le-Jcx" kind="relationship" relationship="rootViewController" id="VpM-81-13w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epv-yN-Inb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5442" y="-2479"/>
+        </scene>
+        <!--Ten Ways-->
+        <scene sceneID="0ji-2W-pgN">
+            <objects>
+                <viewController title="Ten Ways" id="a4n-qW-S3s" customClass="TenWaysViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J8i-Ir-zxx"/>
+                        <viewControllerLayoutGuide type="bottom" id="BWz-cZ-p4I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aAI-5G-kGh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-Sy-5cc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tenwaysBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dXI-a1-VPY">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ3-uW-Ey3" userLabel="Button1">
+                                        <rect key="frame" x="59" y="212" width="84" height="99"/>
+                                        <state key="normal" image="tenwaysPH.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="local:" destination="a4n-qW-S3s" eventType="touchUpInside" id="hb7-E3-SCl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEF-L4-Gsf" userLabel="Button2">
+                                        <rect key="frame" x="177" y="212" width="84" height="99"/>
+                                        <state key="normal" image="tenwaysUS.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="intl:" destination="a4n-qW-S3s" eventType="touchUpInside" id="30e-NI-zqS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="t4x-2Y-5Si"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="9WX-me-V7m" kind="modal" identifier="gotoLocal" modalTransitionStyle="flipHorizontal" id="3qm-jo-pEk"/>
+                        <segue destination="cBA-B4-hbZ" kind="modal" identifier="gotoIntl" id="lwc-R2-x7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fmc-hk-o1Z" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1913" y="-2330"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Nutrifab.png" width="150" height="150"/>
-        <image name="bgport.jpg" width="600" height="862"/>
+        <image name="Nutrifab.png" width="178" height="237"/>
+        <image name="aboutBG.jpg" width="600" height="1018"/>
+        <image name="bgVer2.jpg" width="600" height="1018"/>
+        <image name="blankBG.jpg" width="600" height="1018"/>
         <image name="button1.png" width="168" height="198"/>
         <image name="button2.png" width="168" height="198"/>
         <image name="button3.png" width="168" height="198"/>
         <image name="button4.png" width="168" height="198"/>
         <image name="buttonDownload.png" width="168" height="198"/>
         <image name="buttonView.png" width="168" height="198"/>
-        <image name="certbtn1.png" width="85" height="85"/>
-        <image name="certbtn2.png" width="85" height="85"/>
-        <image name="certbtn3.png" width="85" height="85"/>
-        <image name="certbtn4.png" width="85" height="85"/>
-        <image name="certbtn5.png" width="85" height="85"/>
-        <image name="certbtn6.png" width="98" height="71"/>
-        <image name="certbtn7.png" width="96" height="69"/>
-        <image name="certbtn8.png" width="99" height="70"/>
-        <image name="certbtn9.png" width="98" height="69"/>
         <image name="director1.jpg" width="150" height="150"/>
         <image name="director2.jpg" width="150" height="150"/>
         <image name="director3.jpg" width="150" height="150"/>
         <image name="ic_aboutus.png" width="50" height="50"/>
-        <image name="ic_prod_packages.png" width="50" height="50"/>
-        <image name="ic_tenways.png" width="50" height="50"/>
+        <image name="lejeune.png" width="178" height="237"/>
+        <image name="mainBG.jpg" width="600" height="1191"/>
+        <image name="member_login.png" width="446" height="51"/>
         <image name="playbutton_small.png" width="35" height="35"/>
-        <image name="procardio.png" width="150" height="150"/>
-        <image name="sante8berries.png" width="150" height="150"/>
+        <image name="procardio.png" width="178" height="237"/>
+        <image name="productsBG.jpg" width="600" height="1018"/>
+        <image name="sante8berries.png" width="178" height="237"/>
         <image name="tab_10ways.png" width="32" height="32"/>
         <image name="tab_company.png" width="32" height="32"/>
         <image name="tab_home.png" width="32" height="32"/>
-        <image name="tab_prod_packages.png" width="32" height="32"/>
         <image name="tab_products.png" width="32" height="32"/>
         <image name="tab_videos.png" width="32" height="32"/>
-        <image name="uno_home_black.png" width="270" height="270"/>
+        <image name="tenwaysBG.jpg" width="600" height="1018"/>
+        <image name="tenwaysPH.png" width="183" height="218"/>
+        <image name="tenwaysUS.png" width="183" height="218"/>
         <image name="uno_home_name.png" width="491" height="270"/>
+        <image name="vid_1.png" width="285" height="165"/>
+        <image name="vid_2.png" width="285" height="165"/>
+        <image name="vid_3.png" width="285" height="165"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
