@@ -134,6 +134,9 @@
 		177F0CE61AB65F0200B41A55 /* i012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 177F0CD81AB65F0200B41A55 /* i012.jpg */; };
 		177F0CE71AB65F0200B41A55 /* i013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 177F0CD91AB65F0200B41A55 /* i013.jpg */; };
 		177F0CE81AB65F0200B41A55 /* i014.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 177F0CDA1AB65F0200B41A55 /* i014.jpg */; };
+		1780B8601AF8770B00DC0FC5 /* ProdPackagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1780B85F1AF8770B00DC0FC5 /* ProdPackagesViewController.m */; };
+		1780B8631AF8775B00DC0FC5 /* buttonprodpackages.png in Resources */ = {isa = PBXBuildFile; fileRef = 1780B8611AF8775B00DC0FC5 /* buttonprodpackages.png */; };
+		1780B8641AF8775B00DC0FC5 /* products_packageBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 1780B8621AF8775B00DC0FC5 /* products_packageBG.png */; };
 		179F087A1993B6C100DAABA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179F08791993B6C100DAABA0 /* Foundation.framework */; };
 		179F087C1993B6C100DAABA0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179F087B1993B6C100DAABA0 /* CoreGraphics.framework */; };
 		179F087E1993B6C100DAABA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179F087D1993B6C100DAABA0 /* UIKit.framework */; };
@@ -149,6 +152,7 @@
 		179F08AB1993B6C100DAABA0 /* unoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 179F08AA1993B6C100DAABA0 /* unoTests.m */; };
 		17A3FAD61A2434EE00505CD5 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 17A3FAD41A2434EE00505CD5 /* iTunesArtwork */; };
 		17A3FAD71A2434EE00505CD5 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 17A3FAD51A2434EE00505CD5 /* iTunesArtwork@2x */; };
+		17ADEDB51AF85F6C0081CD1E /* tab_packages.png in Resources */ = {isa = PBXBuildFile; fileRef = 17ADEDB41AF85F6C0081CD1E /* tab_packages.png */; };
 		17C5C1DF1AA3CA630033C875 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179F088B1993B6C100DAABA0 /* Main_iPhone.storyboard */; };
 		17C5C1E01AA3CA6B0033C875 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179F088E1993B6C100DAABA0 /* Main_iPad.storyboard */; };
 		17CE7E0E1ABC4DC900E1B581 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CE7E0D1ABC4DC900E1B581 /* LoginViewController.m */; };
@@ -334,6 +338,10 @@
 		177F0CD81AB65F0200B41A55 /* i012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i012.jpg; sourceTree = "<group>"; };
 		177F0CD91AB65F0200B41A55 /* i013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i013.jpg; sourceTree = "<group>"; };
 		177F0CDA1AB65F0200B41A55 /* i014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i014.jpg; sourceTree = "<group>"; };
+		1780B85E1AF8770B00DC0FC5 /* ProdPackagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdPackagesViewController.h; sourceTree = "<group>"; };
+		1780B85F1AF8770B00DC0FC5 /* ProdPackagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdPackagesViewController.m; sourceTree = "<group>"; };
+		1780B8611AF8775B00DC0FC5 /* buttonprodpackages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonprodpackages.png; sourceTree = "<group>"; };
+		1780B8621AF8775B00DC0FC5 /* products_packageBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = products_packageBG.png; sourceTree = "<group>"; };
 		17880BBC19C5A39B0049E74D /* unosplash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = unosplash.mp4; sourceTree = "<group>"; };
 		179F08761993B6C100DAABA0 /* unopremier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unopremier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179F08791993B6C100DAABA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -358,6 +366,7 @@
 		179F08AA1993B6C100DAABA0 /* unoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unoTests.m; sourceTree = "<group>"; };
 		17A3FAD41A2434EE00505CD5 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		17A3FAD51A2434EE00505CD5 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		17ADEDB41AF85F6C0081CD1E /* tab_packages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_packages.png; sourceTree = "<group>"; };
 		17CE7E0C1ABC4DC900E1B581 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		17CE7E0D1ABC4DC900E1B581 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		17CEC7D619D1810700C84CCB /* LocalModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalModelController.h; sourceTree = "<group>"; };
@@ -493,6 +502,8 @@
 				1778D9F71AAD04D5000A85C2 /* tenwaysBG.jpg */,
 				1776ED3D1AA46AAF0094C05C /* uno_home_white.png */,
 				1700E46A1AA44C3800791EDE /* unopremierBG.jpg */,
+				1780B8611AF8775B00DC0FC5 /* buttonprodpackages.png */,
+				1780B8621AF8775B00DC0FC5 /* products_packageBG.png */,
 				170DE1DE1A259A0200BC5765 /* buttonDownload.png */,
 				170DE1DF1A259A0200BC5765 /* buttonView.png */,
 				170DE1D61A2595C200BC5765 /* button1.png */,
@@ -512,6 +523,7 @@
 				17D172FE19CA65E000A027DC /* director2.jpg */,
 				17D172FF19CA65E000A027DC /* director3.jpg */,
 				172E4C4219C694CC00551E8B /* tab_videos.png */,
+				17ADEDB41AF85F6C0081CD1E /* tab_packages.png */,
 				172E4C3A19C6888E00551E8B /* uno_home_name.png */,
 				172E4C2F19C687EC00551E8B /* tab_10ways.png */,
 				172E4C3019C687EC00551E8B /* tab_company.png */,
@@ -643,6 +655,8 @@
 				17FD88A419CC1DE600F0706C /* CompanyViewController.m */,
 				17FD889919CB920200F0706C /* ProductsClasses */,
 				179F08801993B6C100DAABA0 /* Supporting Files */,
+				1780B85E1AF8770B00DC0FC5 /* ProdPackagesViewController.h */,
+				1780B85F1AF8770B00DC0FC5 /* ProdPackagesViewController.m */,
 			);
 			path = uno;
 			sourceTree = "<group>";
@@ -850,6 +864,7 @@
 				177F0CCB1AB65E6F00B41A55 /* p013.jpg in Resources */,
 				1729F47E19D2CB0000B2B2A6 /* DefaultPortraitNR.png in Resources */,
 				177F0CC71AB65E6F00B41A55 /* p009.jpg in Resources */,
+				17ADEDB51AF85F6C0081CD1E /* tab_packages.png in Resources */,
 				177F0CC01AB65E6F00B41A55 /* p002.jpg in Resources */,
 				177F0CE61AB65F0200B41A55 /* i012.jpg in Resources */,
 				17E7AF1419C7CAD6009E5374 /* tap.png in Resources */,
@@ -930,6 +945,7 @@
 				177F0CDD1AB65F0200B41A55 /* i003.jpg in Resources */,
 				172E4BF219C67A2500551E8B /* icons_mission.png in Resources */,
 				172E4BE319C67A2500551E8B /* icons_breakthru.png in Resources */,
+				1780B8631AF8775B00DC0FC5 /* buttonprodpackages.png in Resources */,
 				1721F4E919CD058D0087AA29 /* swiperight.png in Resources */,
 				1730133B1A245CF3006F66FE /* Contents.json in Resources */,
 				1778D9FA1AAD04D5000A85C2 /* productsBG.jpg in Resources */,
@@ -947,6 +963,7 @@
 				17E53EC21AB47B3B0047FB97 /* prod_lejeune.jpg in Resources */,
 				17E7AF1219C7CAD6009E5374 /* rotation.png in Resources */,
 				1730133E1A245CF3006F66FE /* Icon-40@3x.png in Resources */,
+				1780B8641AF8775B00DC0FC5 /* products_packageBG.png in Resources */,
 				177F0CE51AB65F0200B41A55 /* i011.jpg in Resources */,
 				1730133F1A245CF3006F66FE /* Icon-60@2x.png in Resources */,
 				172E4BEF19C67A2500551E8B /* icons_healthydrinks.png in Resources */,
@@ -1000,6 +1017,7 @@
 				171496B919CB0ABC00AC4C3C /* BeautyProductsTableViewController.m in Sources */,
 				172F30E61A08573F001BD713 /* DetailsViewController.m in Sources */,
 				1721F4E519CCE9F50087AA29 /* TenWays1ViewController.m in Sources */,
+				1780B8601AF8770B00DC0FC5 /* ProdPackagesViewController.m in Sources */,
 				1721F4E219CCE4430087AA29 /* VideosViewController.m in Sources */,
 				17CEC7DE19D1812400C84CCB /* LocalRootViewController.m in Sources */,
 				179F08931993B6C100DAABA0 /* FirstViewController.m in Sources */,
@@ -1099,7 +1117,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "1eb93276-8950-497a-84a1-13c0906494ea";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1133,7 +1151,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PROVISIONING_PROFILE = "1eb93276-8950-497a-84a1-13c0906494ea";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1153,7 +1171,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PLIST_FILE_OUTPUT_FORMAT = XML;
 				PRODUCT_NAME = unopremier;
-				PROVISIONING_PROFILE = "1eb93276-8950-497a-84a1-13c0906494ea";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1171,7 +1189,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PLIST_FILE_OUTPUT_FORMAT = XML;
 				PRODUCT_NAME = unopremier;
-				PROVISIONING_PROFILE = "1eb93276-8950-497a-84a1-13c0906494ea";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

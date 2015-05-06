@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "179F08751993B6C000DAABA0"
-               BuildableName = "uno.app"
+               BuildableName = "unopremier.app"
                BlueprintName = "uno"
                ReferencedContainer = "container:Unopremier.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "179F08751993B6C000DAABA0"
-            BuildableName = "uno.app"
+            BuildableName = "unopremier.app"
             BlueprintName = "uno"
             ReferencedContainer = "container:Unopremier.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "179F08751993B6C000DAABA0"
-            BuildableName = "uno.app"
+            BuildableName = "unopremier.app"
             BlueprintName = "uno"
             ReferencedContainer = "container:Unopremier.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "179F08751993B6C000DAABA0"
-            BuildableName = "uno.app"
+            BuildableName = "unopremier.app"
             BlueprintName = "uno"
             ReferencedContainer = "container:Unopremier.xcodeproj">
          </BuildableReference>

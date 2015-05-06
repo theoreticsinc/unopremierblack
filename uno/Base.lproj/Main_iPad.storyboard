@@ -21,6 +21,7 @@
                         <segue destination="cbJ-Rz-Mah" kind="relationship" relationship="viewControllers" id="z98-oT-xuq"/>
                         <segue destination="EvO-Qg-Xoe" kind="relationship" relationship="viewControllers" id="t52-Dd-xUL"/>
                         <segue destination="ca3-DA-EhO" kind="relationship" relationship="viewControllers" id="WVu-GA-FZP"/>
+                        <segue destination="gIC-aY-6B4" kind="relationship" relationship="viewControllers" id="c3j-HM-Ju4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsp-dh-pdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,6 +305,39 @@ Its vision from a business stand point from products, services, marketing, manag
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSZ-X0-Qqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-641" y="-2206"/>
+        </scene>
+        <!--Packages-->
+        <scene sceneID="9oO-DX-Mxr">
+            <objects>
+                <viewController id="gIC-aY-6B4" customClass="ProdPackagesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3wA-TI-Vk2"/>
+                        <viewControllerLayoutGuide type="bottom" id="fMq-9A-xxC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yX1-YP-qry">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="products_packageBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xkr-3v-saU">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8M-Fm-Gnq">
+                                <rect key="frame" x="308" y="420" width="153" height="184"/>
+                                <state key="normal" image="buttonprodpackages.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buy:" destination="gIC-aY-6B4" eventType="touchUpInside" id="X3Z-Ud-DCh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Packages" image="tab_packages.png" id="CwN-7S-6e3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqm-Bn-hhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6602" y="-1355"/>
         </scene>
         <!--Videos-->
         <scene sceneID="eDI-TG-5cb">
@@ -1429,6 +1463,7 @@ Its vision from a business stand point from products, services, marketing, manag
         <image name="button4.png" width="168" height="198"/>
         <image name="buttonDownload.png" width="168" height="198"/>
         <image name="buttonView.png" width="168" height="198"/>
+        <image name="buttonprodpackages.png" width="204" height="242"/>
         <image name="director1.jpg" width="150" height="150"/>
         <image name="director2.jpg" width="150" height="150"/>
         <image name="director3.jpg" width="150" height="150"/>
@@ -1439,10 +1474,12 @@ Its vision from a business stand point from products, services, marketing, manag
         <image name="playbutton_big.png" width="70" height="70"/>
         <image name="procardio.png" width="178" height="237"/>
         <image name="productsBG.jpg" width="600" height="1018"/>
+        <image name="products_packageBG.png" width="600" height="1009"/>
         <image name="sante8berries.png" width="178" height="237"/>
         <image name="tab_10ways.png" width="32" height="32"/>
         <image name="tab_company.png" width="32" height="32"/>
         <image name="tab_home.png" width="32" height="32"/>
+        <image name="tab_packages.png" width="32" height="32"/>
         <image name="tab_products.png" width="32" height="32"/>
         <image name="tab_videos.png" width="32" height="32"/>
         <image name="tenwaysBG.jpg" width="600" height="1018"/>

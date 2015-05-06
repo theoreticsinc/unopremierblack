@@ -5,6 +5,40 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
+        <!--Packages-->
+        <scene sceneID="byv-Af-6y2">
+            <objects>
+                <viewController id="iSL-rm-Dqp" customClass="ProdPackagesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dXZ-Fk-vwa"/>
+                        <viewControllerLayoutGuide type="bottom" id="PaZ-DC-vAm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PcC-4c-DOb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="products_packageBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="hEp-Lp-1kG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgK-X0-Tvu">
+                                <rect key="frame" x="114" y="225" width="92" height="117"/>
+                                <state key="normal" image="buttonprodpackages.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buy:" destination="iSL-rm-Dqp" eventType="touchUpInside" id="nXx-Vs-xT4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Packages" image="tab_packages.png" id="yEV-kb-DyL"/>
+                    <navigationItem key="navigationItem" id="8Lo-mI-bFq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNs-k3-R7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5437" y="-2320"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XFG-WU-Wbs">
             <objects>
@@ -21,11 +55,12 @@
                         <segue destination="eyN-w8-MGC" kind="relationship" relationship="viewControllers" id="IIk-SZ-aeL"/>
                         <segue destination="sLC-BG-th1" kind="relationship" relationship="viewControllers" id="uXm-4y-jjh"/>
                         <segue destination="8ap-sF-2WE" kind="relationship" relationship="viewControllers" id="foL-zf-cfI"/>
+                        <segue destination="iSL-rm-Dqp" kind="relationship" relationship="viewControllers" id="P1x-if-mjB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8p-54-nGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5893" y="-1611"/>
+            <point key="canvasLocation" x="-5345" y="-1657"/>
         </scene>
         <!--Our Company-->
         <scene sceneID="W3I-pn-N6e">
@@ -93,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4553" y="-1622"/>
+            <point key="canvasLocation" x="-4021" y="-1622"/>
         </scene>
         <!--AboutUs-->
         <scene sceneID="PvD-Pk-RTb">
@@ -138,7 +173,7 @@ Its vision from a business stand point from Products, Services, Marketing, Manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr0-cB-I7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1309" y="-2042"/>
+            <point key="canvasLocation" x="-777" y="-2042"/>
         </scene>
         <!--BoardDirector-->
         <scene sceneID="J99-FU-2k7">
@@ -303,7 +338,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEM-01-USl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-561" y="-2042"/>
+            <point key="canvasLocation" x="-29" y="-2042"/>
         </scene>
         <!--Videos-->
         <scene sceneID="YkQ-s6-8Cr">
@@ -519,7 +554,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IkL-mJ-YL1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2303" y="-2330"/>
+            <point key="canvasLocation" x="-1771" y="-2330"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="r3o-8G-5Z5">
@@ -925,7 +960,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fng-1L-1ev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5345" y="-1622"/>
+            <point key="canvasLocation" x="-4813" y="-1622"/>
         </scene>
         <!--Products-->
         <scene sceneID="eqx-ey-kUb">
@@ -1049,7 +1084,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGB-cA-mx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4521" y="-2363"/>
+            <point key="canvasLocation" x="-3989" y="-2363"/>
         </scene>
         <!--Ten Ways-->
         <scene sceneID="Mfr-SR-lQd">
@@ -1069,7 +1104,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfI-aT-Gc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2691" y="-2330"/>
+            <point key="canvasLocation" x="-2159" y="-2330"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="VSG-6A-UGV">
@@ -1136,7 +1171,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4J-Nb-o26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5020" y="-2479"/>
+            <point key="canvasLocation" x="-4488" y="-2479"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lsv-4B-0Y6">
@@ -1262,7 +1297,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sai-Mn-2Vz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1704" y="-1968"/>
+            <point key="canvasLocation" x="-1172" y="-1968"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cLo-rC-FG4">
@@ -1280,7 +1315,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hn0-Sf-1zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-957" y="-2042"/>
+            <point key="canvasLocation" x="-425" y="-2042"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Vcg-RV-apo">
@@ -1380,7 +1415,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epv-yN-Inb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5442" y="-2479"/>
+            <point key="canvasLocation" x="-4910" y="-2479"/>
         </scene>
         <!--Ten Ways-->
         <scene sceneID="0ji-2W-pgN">
@@ -1435,7 +1470,7 @@ Its vision from a business stand point from products, services, marketing, manag
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fmc-hk-o1Z" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1913" y="-2330"/>
+            <point key="canvasLocation" x="-1381" y="-2330"/>
         </scene>
     </scenes>
     <resources>
@@ -1449,6 +1484,7 @@ Its vision from a business stand point from products, services, marketing, manag
         <image name="button4.png" width="168" height="198"/>
         <image name="buttonDownload.png" width="168" height="198"/>
         <image name="buttonView.png" width="168" height="198"/>
+        <image name="buttonprodpackages.png" width="204" height="242"/>
         <image name="director1.jpg" width="150" height="150"/>
         <image name="director2.jpg" width="150" height="150"/>
         <image name="director3.jpg" width="150" height="150"/>
@@ -1459,10 +1495,12 @@ Its vision from a business stand point from products, services, marketing, manag
         <image name="playbutton_small.png" width="35" height="35"/>
         <image name="procardio.png" width="178" height="237"/>
         <image name="productsBG.jpg" width="600" height="1018"/>
+        <image name="products_packageBG.png" width="600" height="1009"/>
         <image name="sante8berries.png" width="178" height="237"/>
         <image name="tab_10ways.png" width="32" height="32"/>
         <image name="tab_company.png" width="32" height="32"/>
         <image name="tab_home.png" width="32" height="32"/>
+        <image name="tab_packages.png" width="32" height="32"/>
         <image name="tab_products.png" width="32" height="32"/>
         <image name="tab_videos.png" width="32" height="32"/>
         <image name="tenwaysBG.jpg" width="600" height="1018"/>
